@@ -22,9 +22,6 @@
             justify-content: center;
             align-items: center;
         }
-        #fileSelect{
-            font-size: 20px;
-        }
 
         select {
             padding: 10px;
@@ -49,6 +46,12 @@
             background-color: #0056b3;
             transform: translateY(-3px);
         }
+
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
     </style>
     <script>
         function downloadSelectedFile() {
@@ -61,11 +64,10 @@
     </script>
 </head>
 <body>
-    <h1 class="fileSelect">مرحبا بك لتحميل pdf اضغط علي اختر ملف للتنذيل</h1>
-
+    <h1 class="fileSelect">مرحبا بك لتحميل pdf اضغط علي اختر ملف للتنزيل</h1>
     <div class="container">
         <select id="fileSelect">
-            <option value="" disabled selected>اختر ملفًا لتنزيله</option>
+            <option class="h" value="" disabled selected>اختر ملفًا لتنزيله</option>
             <option value="كتاب كيان ثانيه ثانوي عربي.pdf">كتاب كيان ثانية ثانوي عربي ترم ثاني</option>
             <option value="موقع شبابيك ميرسي - لغة فرنسية - 2 ث - ترم 2 - ذاكرولي (2).pdf">كتاب ميرسي من موقع شبابيك</option>
             <option value="نقدر_التعليمي_الامتحان_تاريخ_2ث_ترم2_2024.pdf">كتاب الامتحان التاريخ من قناة تليجرام نقدر التعليمي</option>
