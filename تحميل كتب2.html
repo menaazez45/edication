@@ -15,13 +15,15 @@
             align-items: center;
             height: 100vh;
         }
+        #fileSelect{
+            font-size: 20px;
+        }
 
         .container {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
-            max-width: 1200px;
-            margin: 20px;
+            align-items: center;
         }
 
         .download-link {
@@ -39,26 +41,64 @@
             background-color: #0056b3;
             transform: translateY(-3px);
         }
-    </style>
-</head>
 
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #007bff;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+    </style>
+    <script>
+        function downloadSelectedFile() {
+            var select = document.getElementById("fileSelect");
+            var selectedValue = select.options[select.selectedIndex].value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+</head>
 <body>
+    <h1 class="fileSelect">مرحبا بك لتحميل pdf اضغط علي اختر ملف للتنذيل</h1>
     <div class="container">
-        <a class="download-link" href="كتاب كيان ثانيه ثانوي عربي.pdf" download>كتاب كيان ثانيه ثانوي عربي ترم ثاني</a>
-        <a class="download-link" href="موقع شبابيك ميرسي - لغة فرنسية - 2 ث - ترم 2 - ذاكرولي (2).pdf" download>كتاب ميرسي من موقع شبابيك</a>
-        <a class="download-link" href="_نقدر_التعليمي_الامتحان_أحياء_2ث_ترم2_2024.pdf" download>كتاب الامتحان احياء من قناة تليجرام نقدر التعليمي</a>
-        <a class="download-link" href="قوانين الفيزياء تانية ثانوي ترم ثاني (موقع كن مجد).pdf" download>الفيزياء تانية ثانوي ترم ثاني (موقع كن مجد)</a>
-        <a class="download-link" href="كتاب_الامتحان_فيزياء_جزء_الأسئلة_2024_TOOPSEC_❤️⚠️_compressed.pdf" download>كتاب الامتحان فيزياء جزء الأسئلة 2024</a>
-        <a class="download-link" href="مذكرة الحسام في كيمياء تانية ثانوي الترم الثاني.pdf" download>مذكرة الحسام في كيمياء تانية ثانوي الترم الثاني</a>
-        <a class="download-link" href="عربي و رياضه ثانيه ثانوي.pdf" download>نماذج عربي و رياضه ثانيه ثانوي</a>
-        <a class="download-link" href="نموذج استرشادي كيمياء ثانيه ثانوي 2024.pdf" download>نموذج الوزاره الاسترشادي كيمياء</a>
-        <a class="download-link" href="امتحان الوزاره استرشادي رياضه بحته.pdf" download>نماذج الوزاره الاسترشادي رياضه</a>
-        <a class="download-link" href="مفاهيم رياضه ادبي.jpg" download>مفاهيم رياضه ادبي</a>
-        <a class="download-link" href="اهم قوانين الرياضيات ادبي للصف الثاني الثانوي الترم الثاني مستر عادل ادوار.pdf" download>اهم قوانين الرياضيات ادبي للصف الثاني الثانوي الترم الثاني مستر عادل ادوار</a>
-        <a class="download-link" href="امتحان الوزارة الإسترشادي فى الأحياء للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك أونلاين.pdf" download>امتحان الوزارة الإسترشادي فى الأحياء + نموذج الاجابة للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك أونلاين</a>
-        <a class="download-link" href="ملخص احياء تانية ثانوي ترم ثاني (موقع كن مجد).pdf" download>ملخص احياء تانية ثانوي ترم ثاني (موقع كن مجد)</a>
-        <a class="download-link" href="امتحان الوزارة الإسترشادي فى الكيمياء للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك اونلاين.pdf" download>امتحان الوزارة الإسترشادي فى الكيمياء للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك اونلاين</a>
-        <a class="download-link" href="مراجعة ليلة الامتحان فى اللغة الفرنسية للصف الثانى الثانوى الترم الثانى 2024 من موقع تعليمك اونلاين مسيو محمد عبدالحميد.pdf" download>مراجعة ليلة الامتحان فى اللغة الفرنسية للصف الثانى الثانوى الترم الثانى 2024 من موقع تعليمك اونلاين مسيو محمد عبدالحميد</a>
+        <select id="fileSelect">
+            <option value="" disabled selected>اختر ملفًا لتنزيله</option>
+            <option value="كتاب كيان ثانيه ثانوي عربي.pdf">كتاب كيان ثانيه ثانوي عربي ترم ثاني</option>
+            <option value="موقع شبابيك ميرسي - لغة فرنسية - 2 ث - ترم 2 - ذاكرولي (2).pdf">كتاب ميرسي من موقع شبابيك</option>
+            <option value="_نقدر_التعليمي_الامتحان_أحياء_2ث_ترم2_2024.pdf">كتاب الامتحان احياء من قناة تليجرام نقدر التعليمي</option>
+            <option value="قوانين الفيزياء تانية ثانوي ترم ثاني (موقع كن مجد).pdf">الفيزياء تانية ثانوي ترم ثاني (موقع كن مجد)</option>
+            <option value="كتاب_الامتحان_فيزياء_جزء_الأسئلة_2024_TOOPSEC_❤️⚠️_compressed.pdf">كتاب الامتحان فيزياء جزء الأسئلة 2024</option>
+            <option value="مذكرة الحسام في كيمياء تانية ثانوي الترم الثاني.pdf">مذكرة الحسام في كيمياء تانية ثانوي الترم الثاني</option>
+            <option value="عربي و رياضه ثانيه ثانوي.pdf">نماذج عربي و رياضه ثانيه ثانوي</option>
+            <option value="نموذج استرشادي كيمياء ثانيه ثانوي 2024.pdf">نموذج الوزاره الاسترشادي كيمياء</option>
+            <option value="امتحان الوزاره استرشادي رياضه بحته.pdf">نماذج الوزاره الاسترشادي رياضه</option>
+            <option value="مفاهيم رياضه ادبي.jpg">مفاهيم رياضه ادبي</option>
+            <option value="اهم قوانين الرياضيات ادبي للصف الثاني الثانوي الترم الثاني مستر عادل ادوار.pdf">اهم قوانين الرياضيات ادبي للصف الثاني الثانوي الترم الثاني مستر عادل ادوار</option>
+            <option value="امتحان الوزارة الإسترشادي فى الأحياء للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك أونلاين.pdf">امتحان الوزارة الإسترشادي فى الأحياء + نموذج الاجابة للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك أونلاين</option>
+            <option value="ملخص احياء تانية ثانوي ترم ثاني (موقع كن مجد).pdf">ملخص احياء تانية ثانوي ترم ثاني (موقع كن مجد)</option>
+            <option value="امتحان الوزارة الإسترشادي فى الكيمياء للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك اونلاين.pdf">امتحان الوزارة الإسترشادي فى الكيمياء للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك اونلاين</option>
+            <option value="مراجعة ليلة الامتحان فى اللغة الفرنسية للصف الثانى الثانوى الترم الثانى 2024 من موقع تعليمك اونلاين مسيو محمد عبدالحميد.pdf">مراجعة ليلة الامتحان فى اللغة الفرنسية للصف الثانى الثانوى الترم الثانى 2024 من موقع تعليمك اونلاين مسيو محمد عبدالحميد</option>
+            <option value="امتحانات فرنساوي من موقع السبوره.pdf">امتحانات فرنساوي من موقع السبوره</option>
+        </select>
+        <button onclick="downloadSelectedFile()">تحميل الملف</button>
     </div>
 </body>
 </html>
