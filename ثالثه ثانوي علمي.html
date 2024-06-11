@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثالثه ثانوي علمي ترم اول</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 6vw; /* حجم الخط بالنسبة إلى عرض النافذة */
+        }
+
+        select {
+            padding: 10px;
+            font-size: 4vw; /* حجم الخط بالنسبة إلى عرض النافذة */
+            border-radius: 8px;
+            border: 1px solid #007bff;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 4vw; /* حجم الخط بالنسبة إلى عرض النافذة */
+            border-radius: 8px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+    </style>
+    <script>
+        function downloadSelectedFile() {
+            var select = document.getElementById("fileSelect");
+            var selectedValue = select.options[select.selectedIndex].value;
+            if (selectedValue) {
+                var a = document.createElement('a');
+                a.href = selectedValue;
+                a.download = selectedValue.split('/').pop();
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>تحميل ملفات الصف الثالثه الثانوي علمي</h1>
+        <select id="fileSelect">
+            <option class="h" value="" disabled selected>اختر ملفًا لتنزيله</option>
+             <option value="المعاصر 3ث جبر جزء 1 شرح.pdf">المعاصر 3ث جبر جزء 1 شرح</option>
+             <option value="التأسيس_الجوهري_في_الأحياء_٢٠٢٤_.pdf">التأسيس_الجوهري_في_الأحياء_٢٠٢٤</option>
+             <option value="الامتحان_فيزياء_شرح_3ث_2024_TOOPSEC@_❤️⚠️.pdf">الامتحان_فيزياء_شرح_3ث_2024_TOOPSEC@_❤️⚠️</option>
+             <option value="الامتحان_كيمياء_شرح_3ث_2024_TOOPSEC@_❤️⚠️.pdf">الامتحان_كيمياء_شرح_3ث_2024_TOOPSEC@_❤️⚠️</option>
+             <option value="كتاب_المعاصر_أنجليزي_الترم_الاول_3ث_2024_قناة_كتب_تالتة_ثانوي.pdf">كتاب_المعاصر_أنجليزي_الترم_الاول_3ث_2024_قناة_كتب_تالتة_ثانوي</option>
+             <option value="التأسيس_الجوهري_في_الأحياء_٢٠٢٤_.pdf">التأسيس_الجوهري_في_الأحياء_٢٠٢٤</option>
+            <option value=""></option>
+        </select>
+        <button onclick="downloadSelectedFile()">تحميل الملف</button>
+    </div>
+</body>
+</html>
