@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ثالثه ثانوي ادبي ترم اول</title>
+    <title>تحميل ملفات الصف الثالث الثانوي أدبي</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,12 +31,12 @@
             color: #007bff;
             text-align: center;
             margin-bottom: 20px;
-            font-size: 6vw; /* حجم الخط بالنسبة إلى عرض النافذة */
+            font-size: 6vw;
         }
 
         select {
             padding: 10px;
-            font-size: 4vw; /* حجم الخط بالنسبة إلى عرض النافذة */
+            font-size: 4vw;
             border-radius: 8px;
             border: 1px solid #007bff;
             margin-bottom: 20px;
@@ -46,7 +46,7 @@
 
         button {
             padding: 10px 20px;
-            font-size: 4vw; /* حجم الخط بالنسبة إلى عرض النافذة */
+            font-size: 4vw;
             border-radius: 8px;
             background-color: #007bff;
             color: #fff;
@@ -65,23 +65,18 @@
     <script>
         function downloadSelectedFile() {
             var select = document.getElementById("fileSelect");
-            var selectedValue = select.options[select.selectedIndex].value;
+            var selectedValue = select.value;
             if (selectedValue) {
-                var a = document.createElement('a');
-                a.href = selectedValue;
-                a.download = selectedValue.split('/').pop();
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
+                window.location.href = selectedValue;
             }
         }
     </script>
 </head>
 <body>
     <div class="container">
-        <h1>تحميل ملفات الصف الثالثه الثانوي ادبي</h1>
+        <h1>تحميل ملفات الصف الثالث الثانوي أدبي</h1>
         <select id="fileSelect">
-            <option class="h" value="" disabled selected>اختر ملفًا لتنزيله</option>
+            <option class="h" value="" disabled="" selected="">اختر ملفًا لتنزيله</option>
              <option value="كتاب_المعاصر_أنجليزي_الترم_الاول_3ث_2024_قناة_كتب_تالتة_ثانوي.pdf">كتاب_المعاصر_أنجليزي_الترم_الاول_3ث_2024_قناة_كتب_تالتة_ثانوي</option>
              <option value="كتاب مثالي علم_نفس شرح (1).pdf">كتاب مثالي علم_نفس شرح (1)</option>
              <option value="كتاب_الامتحان_تاريخ_شرح_3ث_2024_قناة_كتب_تالتة_ثانوي.pdf">كتاب_الامتحان_تاريخ_شرح_3ث_2024_قناة_كتب_تالتة_ثانوي</option>
