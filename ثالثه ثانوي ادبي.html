@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
         }
@@ -25,11 +25,12 @@
             width: 100%;
             max-width: 500px;
             box-sizing: border-box;
+            text-align: center;
+            flex: 1; /* Ensure the container takes up available space */
         }
 
         h1 {
             color: #007bff;
-            text-align: center;
             margin-bottom: 20px;
             font-size: 6vw;
         }
@@ -44,22 +45,42 @@
             box-sizing: border-box;
         }
 
-        button {
+        .button {
             padding: 10px 20px;
-            font-size: 4vw;
-            border-radius: 8px;
-            background-color: #007bff;
-            color: #fff;
+            font-size: 40px;
             border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            width: 100%;
-            box-sizing: border-box;
+            margin: 5px;
         }
 
-        button:hover {
-            background-color: #0056b3;
-            transform: translateY(-3px);
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
         }
     </style>
     <script>
@@ -73,16 +94,19 @@
     </script>
 </head>
 <body>
+    <div class="navbar">
+        <a href="اسئله ادبي.html">اسئله ادبي</a>
+    </div>
     <div class="container">
         <h1>تحميل ملفات الصف الثالث الثانوي أدبي</h1>
         <select id="fileSelect">
-            <option class="h" value="" disabled="" selected="">اختر ملفًا لتنزيله</option>
-             <option value="كتاب_المعاصر_أنجليزي_الترم_الاول_3ث_2024_قناة_كتب_تالتة_ثانوي.pdf">كتاب_المعاصر_أنجليزي_الترم_الاول_3ث_2024_قناة_كتب_تالتة_ثانوي</option>
-             <option value="كتاب مثالي علم_نفس شرح (1).pdf">كتاب مثالي علم_نفس شرح (1)</option>
-             <option value="كتاب_الامتحان_تاريخ_شرح_3ث_2024_قناة_كتب_تالتة_ثانوي.pdf">كتاب_الامتحان_تاريخ_شرح_3ث_2024_قناة_كتب_تالتة_ثانوي</option>
-             <option value="كتاب_الامتحان_في_الجغرافيا_جزء_الشرح_كامل_للصف_الثالث_الثانوي_2023.pdf">كتاب_الامتحان_في_الجغرافيا_جزء_الشرح_كامل_للصف_الثالث_الثانوي_2023</option>
+            <option value="" disabled selected>اختر ملفًا لتنزيله</option>
+            <option value="كتاب_المعاصر_أنجليزي_الترم_الاول_3ث_2024_قناة_كتب_تالتة_ثانوي.pdf">كتاب المعاصر إنجليزي الترم الأول 3ث 2024</option>
+            <option value="كتاب مثالي علم_نفس شرح (1).pdf">كتاب مثالي علم نفس شرح (1)</option>
+            <option value="كتاب_الامتحان_تاريخ_شرح_3ث_2024_قناة_كتب_تالتة_ثانوي.pdf">كتاب الامتحان تاريخ شرح 3ث 2024</option>
+            <option value="كتاب_الامتحان_في_الجغرافيا_جزء_الشرح_كامل_للصف_الثالث_الثانوي_2023.pdf">كتاب الامتحان في الجغرافيا جزء الشرح كامل للصف الثالث الثانوي 2023</option>
         </select>
-        <button onclick="downloadSelectedFile()">تحميل الملف</button>
+        <button class="button" onclick="downloadSelectedFile()">تحميل الملف</button>
     </div>
 </body>
 </html>
