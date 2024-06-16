@@ -3,358 +3,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اختبار الأحياء للصف الثالث الثانوي</title>
+    <title>امتحان الأحياء</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             direction: rtl;
             text-align: right;
-            background-color: #f0f0f0;
-            padding: 20px;
         }
         .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            max-width: 700px;
+            width: 50%;
             margin: auto;
+            padding-top: 20px;
         }
         .question {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
-        .options input {
-            margin-left: 10px;
+        .options label {
+            display: block;
         }
-        .submit-btn {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .result {
+        #result, #wrongAnswers {
             margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+        }
+        #timer {
             font-weight: bold;
-        }
-        .wrong-answers {
-            margin-top: 20px;
-        }
-        .wrong-answer {
-            color: red;
-            margin-bottom: 10px;
-        }
-        .correct-answer {
-            color: green;
-        }
-        .explanation {
-            color: blue;
-            font-size: 0.9em;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>اختبار الأحياء للصف الثالث الثانوي</h1>
+        <div id="timer">الوقت المتبقي: 2:00:00</div>
         <form id="quizForm">
             <div class="question">
                 <p>1. ما هو المركب الذي يدخل في تركيب جدران الخلايا النباتية؟</p>
                 <div class="options">
                     <label><input type="radio" name="question1" value="السيليلوز"> السيليلوز</label><br>
-                    <label><input type="radio" name="question1" value="الكيتين"> الكيتين</label><br>
+                    <label><input type="radio" name="question1" value="النشا"> النشا</label><br>
                     <label><input type="radio" name="question1" value="البكتين"> البكتين</label><br>
-                    <label><input type="radio" name="question1" value="الليغنين"> الليغنين</label><br>
+                    <label><input type="radio" name="question1" value="اللكتين"> اللكتين</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>2. أي الأعضاء التالية يفرز الإنزيمات الهاضمة؟</p>
+                <p>2. ما هي الغدة التي تفرز إنزيمات هاضمة تساعد في هضم الطعام؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question2" value="الكبد"> الكبد</label><br>
                     <label><input type="radio" name="question2" value="البنكرياس"> البنكرياس</label><br>
-                    <label><input type="radio" name="question2" value="الكلى"> الكلى</label><br>
-                    <label><input type="radio" name="question2" value="الطحال"> الطحال</label><br>
+                    <label><input type="radio" name="question2" value="الغدة الكظرية"> الغدة الكظرية</label><br>
+                    <label><input type="radio" name="question2" value="الغدة الدرقية"> الغدة الدرقية</label><br>
+                    <label><input type="radio" name="question2" value="الغدة النخامية"> الغدة النخامية</label><br>
                 </div>
             </div>
             <div class="question">
                 <p>3. ما هي الوحدة الوظيفية للكلى؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question3" value="النيفرون"> النيفرون</label><br>
-                    <label><input type="radio" name="question3" value="الحويصلة"> الحويصلة</label><br>
-                    <label><input type="radio" name="question3" value="الأنيبيبة"> الأنيبيبة</label><br>
-                    <label><input type="radio" name="question3" value="العقدة"> العقدة</label><br>
+                    <label><input type="radio" name="question3" value="النفرون"> النفرون</label><br>
+                    <label><input type="radio" name="question3" value="الكبيبة"> الكبيبة</label><br>
+                    <label><input type="radio" name="question3" value="الأنبوب البولي"> الأنبوب البولي</label><br>
+                    <label><input type="radio" name="question3" value="الحويضة"> الحويضة</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>4. ما هو الجزء الذي يتم فيه إنتاج البروتين في الخلية؟</p>
+                <p>4. أي عضية مسؤولة عن تخليق البروتين في الخلية؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question4" value="النواة"> النواة</label><br>
-                    <label><input type="radio" name="question4" value="الميتوكوندريا"> الميتوكوندريا</label><br>
                     <label><input type="radio" name="question4" value="الريبوسومات"> الريبوسومات</label><br>
+                    <label><input type="radio" name="question4" value="الميتوكوندريا"> الميتوكوندريا</label><br>
                     <label><input type="radio" name="question4" value="الجهاز الجولجي"> الجهاز الجولجي</label><br>
+                    <label><input type="radio" name="question4" value="النواة"> النواة</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>5. أي مما يلي يعتبر جزءًا من الهيكل العظمي المحوري؟</p>
+                <p>5. أي عظم يحمي الدماغ من الإصابات؟</p>
                 <div class="options">
                     <label><input type="radio" name="question5" value="الجمجمة"> الجمجمة</label><br>
-                    <label><input type="radio" name="question5" value="عظمة الفخذ"> عظمة الفخذ</label><br>
-                    <label><input type="radio" name="question5" value="الساعد"> الساعد</label><br>
-                    <label><input type="radio" name="question5" value="الترقوة"> الترقوة</label><br>
+                    <label><input type="radio" name="question5" value="العمود الفقري"> العمود الفقري</label><br>
+                    <label><input type="radio" name="question5" value="القفص الصدري"> القفص الصدري</label><br>
+                    <label><input type="radio" name="question5" value="عظم الفك"> عظم الفك</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>6. ما هو الجزء المسؤول عن توازن الجسم؟</p>
+                <p>6. أي جزء من الأذن يلعب دوراً رئيسياً في توازن الجسم؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question6" value="القوقعة"> القوقعة</label><br>
                     <label><input type="radio" name="question6" value="القنوات الهلالية"> القنوات الهلالية</label><br>
-                    <label><input type="radio" name="question6" value="الطبلة"> الطبلة</label><br>
-                    <label><input type="radio" name="question6" value="السندان"> السندان</label><br>
+                    <label><input type="radio" name="question6" value="طبلة الأذن"> طبلة الأذن</label><br>
+                    <label><input type="radio" name="question6" value="قوقعة الأذن"> قوقعة الأذن</label><br>
+                    <label><input type="radio" name="question6" value="الأذن الخارجية"> الأذن الخارجية</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>7. أي مما يلي ينقل الأكسجين في الدم؟</p>
+                <p>7. أي خلايا تحتوي على الهيموجلوبين؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question7" value="خلايا الدم البيضاء"> خلايا الدم البيضاء</label><br>
                     <label><input type="radio" name="question7" value="خلايا الدم الحمراء"> خلايا الدم الحمراء</label><br>
-                    <label><input type="radio" name="question7" value="البلازما"> البلازما</label><br>
+                    <label><input type="radio" name="question7" value="خلايا الدم البيضاء"> خلايا الدم البيضاء</label><br>
                     <label><input type="radio" name="question7" value="الصفائح الدموية"> الصفائح الدموية</label><br>
+                    <label><input type="radio" name="question7" value="الخلايا العصبية"> الخلايا العصبية</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>8. ما هو الجهاز الذي ينظم درجة حرارة الجسم؟</p>
+                <p>8. أي جهاز في الجسم ينظم درجة حرارة الجسم؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question8" value="الجهاز الهضمي"> الجهاز الهضمي</label><br>
-                    <label><input type="radio" name="question8" value="الجهاز التنفسي"> الجهاز التنفسي</label><br>
                     <label><input type="radio" name="question8" value="الجهاز العصبي"> الجهاز العصبي</label><br>
+                    <label><input type="radio" name="question8" value="الجهاز التنفسي"> الجهاز التنفسي</label><br>
+                    <label><input type="radio" name="question8" value="الجهاز الهضمي"> الجهاز الهضمي</label><br>
                     <label><input type="radio" name="question8" value="الجهاز الدوري"> الجهاز الدوري</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>9. ما هو العضو الذي يُنتج الهرمونات الجنسية الذكرية؟</p>
+                <p>9. أي عضو ينتج الهرمونات الجنسية الذكرية؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question9" value="المبيض"> المبيض</label><br>
-                    <label><input type="radio" name="question9" value="الغدة الدرقية"> الغدة الدرقية</label><br>
-                    <label><input type="radio" name="question9" value="الغدة الكظرية"> الغدة الكظرية</label><br>
                     <label><input type="radio" name="question9" value="الخصية"> الخصية</label><br>
+                    <label><input type="radio" name="question9" value="المبيض"> المبيض</label><br>
+                    <label><input type="radio" name="question9" value="الغدة الكظرية"> الغدة الكظرية</label><br>
+                    <label><input type="radio" name="question9" value="الغدة النخامية"> الغدة النخامية</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>10. أي مما يلي يعتبر مركبًا عضويًا؟</p>
+                <p>10. ما هو المصدر الرئيسي للطاقة في الخلية؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question10" value="ثاني أكسيد الكربون"> ثاني أكسيد الكربون</label><br>
-                    <label><input type="radio" name="question10" value="الماء"> الماء</label><br>
                     <label><input type="radio" name="question10" value="الجلوكوز"> الجلوكوز</label><br>
-                    <label><input type="radio" name="question10" value="الأمونيا"> الأمونيا</label><br>
+                    <label><input type="radio" name="question10" value="الدهون"> الدهون</label><br>
+                    <label><input type="radio" name="question10" value="البروتينات"> البروتينات</label><br>
+                    <label><input type="radio" name="question10" value="الأحماض النووية"> الأحماض النووية</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>11. أي جزء من الجهاز العصبي المركزي يتحكم في التنفس؟</p>
+                <p>11. أي جزء من الدماغ يتحكم في وظائف حيوية مثل التنفس وضربات القلب؟</p>
                 <div class="options">
                     <label><input type="radio" name="question11" value="النخاع المستطيل"> النخاع المستطيل</label><br>
-                    <label><input type="radio" name="question11" value="المخ"> المخ</label><br>
                     <label><input type="radio" name="question11" value="المخيخ"> المخيخ</label><br>
-                    <label><input type="radio" name="question11" value="الحبل الشوكي"> الحبل الشوكي</label><br>
+                    <label><input type="radio" name="question11" value="الدماغ الأوسط"> الدماغ الأوسط</label><br>
+                    <label><input type="radio" name="question11" value="القشرة المخية"> القشرة المخية</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>12. ما هو مصدر الطاقة الرئيسي للخلايا؟</p>
+                <p>12. ما هو الإنزيم الذي يساعد في هضم البروتينات في المعدة؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question12" value="الدهون"> الدهون</label><br>
-                    <label><input type="radio" name="question12" value="البروتينات"> البروتينات</label><br>
-                    <label><input type="radio" name="question12" value="الكربوهيدرات"> الكربوهيدرات</label><br>
-                    <label><input type="radio" name="question12" value="الفيتامينات"> الفيتامينات</label><br>
+                    <label><input type="radio" name="question12" value="الببسين"> الببسين</label><br>
+                    <label><input type="radio" name="question12" value="الأميليز"> الأميليز</label><br>
+                    <label><input type="radio" name="question12" value="الليباز"> الليباز</label><br>
+                    <label><input type="radio" name="question12" value="المالتاز"> المالتاز</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>13. أي من التالي هو الحمض النووي الريبي الناقل؟</p>
+                <p>13. ما هو العضو الذي يعمل كمضخة للدم في الجسم؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question13" value="tRNA"> tRNA</label><br>
-                    <label><input type="radio" name="question13" value="mRNA"> mRNA</label><br>
-                    <label><input type="radio" name="question13" value="rRNA"> rRNA</label><br>
-                    <label><input type="radio" name="question13" value="DNA"> DNA</label><br>
+                    <label><input type="radio" name="question13" value="القلب"> القلب</label><br>
+                    <label><input type="radio" name="question13" value="الكبد"> الكبد</label><br>
+                    <label><input type="radio" name="question13" value="الرئتين"> الرئتين</label><br>
+                    <label><input type="radio" name="question13" value="الدماغ"> الدماغ</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>14. أي من التالي يُنتج الطاقة في الخلية؟</p>
+                <p>14. أي عضية في الخلية مسؤولة عن إنتاج الطاقة؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question14" value="النواة"> النواة</label><br>
                     <label><input type="radio" name="question14" value="الميتوكوندريا"> الميتوكوندريا</label><br>
-                    <label><input type="radio" name="question14" value="الريبوسومات"> الريبوسومات</label><br>
-                    <label><input type="radio" name="question14" value="الجهاز الجولجي"> الجهاز الجولجي</label><br>
+                    <label><input type="radio" name="question14" value="النواة"> النواة</label><br>
+                    <label><input type="radio" name="question14" value="الشبكة الإندوبلازمية"> الشبكة الإندوبلازمية</label><br>
+                    <label><input type="radio" name="question14" value="الجسم المركزي"> الجسم المركزي</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>15. ما هو النوع الذي ينتمي إلى المفصليات؟</p>
+                <p>15. ما هي الشعبة التي تنتمي إليها الحشرات؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question15" value="الحشرة"> الحشرة</label><br>
-                    <label><input type="radio" name="question15" value="الثدييات"> الثدييات</label><br>
-                    <label><input type="radio" name="question15" value="الطيور"> الطيور</label><br>
-                    <label><input type="radio" name="question15" value="الأسماك"> الأسماك</label><br>
+                    <label><input type="radio" name="question15" value="المفصليات"> المفصليات</label><br>
+                    <label><input type="radio" name="question15" value="الرخويات"> الرخويات</label><br>
+                    <label><input type="radio" name="question15" value="الديدان الحلقية"> الديدان الحلقية</label><br>
+                    <label><input type="radio" name="question15" value="الحبليات"> الحبليات</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>16. أي من التالي يُعتبر عضوًا في الجهاز المناعي؟</p>
+                <p>16. أي عضو في الجسم يقوم بترشيح الدم وإنتاج خلايا مناعية؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question16" value="القلب"> القلب</label><br>
-                    <label><input type="radio" name="question16" value="الكلى"> الكلى</label><br>
                     <label><input type="radio" name="question16" value="الطحال"> الطحال</label><br>
                     <label><input type="radio" name="question16" value="الكبد"> الكبد</label><br>
+                    <label><input type="radio" name="question16" value="الكلى"> الكلى</label><br>
+                    <label><input type="radio" name="question16" value="العقد الليمفاوية"> العقد الليمفاوية</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>17. أي من الآتي يُنتج خلايا الدم الحمراء؟</p>
+                <p>17. أين يتم إنتاج خلايا الدم في الجسم؟</p>
                 <div class="options">
+                    <label><input type="radio" name="question17" value="نخاع العظام"> نخاع العظام</label><br>
                     <label><input type="radio" name="question17" value="الطحال"> الطحال</label><br>
                     <label><input type="radio" name="question17" value="الكبد"> الكبد</label><br>
-                    <label><input type="radio" name="question17" value="نخاع العظام"> نخاع العظام</label><br>
                     <label><input type="radio" name="question17" value="الغدة الدرقية"> الغدة الدرقية</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>18. أي مما يلي هو الحمض الأميني الأساسي؟</p>
+                <p>18. ما هو الحمض الأميني الأساسي الذي لا يستطيع الجسم تصنيعه ويجب الحصول عليه من الغذاء؟</p>
                 <div class="options">
                     <label><input type="radio" name="question18" value="اللايسين"> اللايسين</label><br>
                     <label><input type="radio" name="question18" value="الجليسين"> الجليسين</label><br>
                     <label><input type="radio" name="question18" value="الألانين"> الألانين</label><br>
-                    <label><input type="radio" name="question18" value="السيرين"> السيرين</label><br>
+                    <label><input type="radio" name="question18" value="الجلوتامين"> الجلوتامين</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>19. أي من التالي يتكون من الكيراتين؟</p>
+                <p>19. ما هو البروتين الذي يشكل بنية الأظافر والشعر؟</p>
                 <div class="options">
-                    <label><input type="radio" name="question19" value="الأظافر"> الأظافر</label><br>
-                    <label><input type="radio" name="question19" value="العظام"> العظام</label><br>
-                    <label><input type="radio" name="question19" value="العضلات"> العضلات</label><br>
-                    <label><input type="radio" name="question19" value="الدهون"> الدهون</label><br>
+                    <label><input type="radio" name="question19" value="الكيراتين"> الكيراتين</label><br>
+                    <label><input type="radio" name="question19" value="الكولاجين"> الكولاجين</label><br>
+                    <label><input type="radio" name="question19" value="الإيلاستين"> الإيلاستين</label><br>
+                    <label><input type="radio" name="question19" value="الميوسين"> الميوسين</label><br>
                 </div>
             </div>
             <div class="question">
-                <p>20. ما هو الجزء الذي يخزن الجلوكوز في الكبد؟</p>
+                <p>20. ما هو الشكل المخزن للجلوكوز في الكبد والعضلات؟</p>
                 <div class="options">
                     <label><input type="radio" name="question20" value="الجليكوجين"> الجليكوجين</label><br>
                     <label><input type="radio" name="question20" value="النشا"> النشا</label><br>
-                    <label><input type="radio" name="question20" value="الأميلوز"> الأميلوز</label><br>
                     <label><input type="radio" name="question20" value="السليلوز"> السليلوز</label><br>
+                    <label><input type="radio" name="question20" value="المالتوز"> المالتوز</label><br>
                 </div>
             </div>
-            <button type="button" class="submit-btn" onclick="checkAnswers()">تحقق من الإجابات</button>
+            <button type="button" onclick="checkAnswers()">إرسال الإجابات</button>
         </form>
-        <div class="result" id="result"></div>
-        <div class="wrong-answers" id="wrongAnswers"></div>
+        <div id="result"></div>
+        <div id="wrongAnswers"></div>
     </div>
-
     <script>
         const correctAnswers = {
             question1: {
                 answer: 'السيليلوز',
-                explanation: 'السيليلوز هو المركب الرئيسي الذي يدخل في تركيب جدران الخلايا النباتية، وهو عبارة عن بوليمر من الجلوكوز. يتميز السيليلوز بأنه يوفر الصلابة والمتانة للخلايا النباتية، مما يساعد النباتات على الوقوف بشكل مستقيم وتقديم الحماية للخلية من العوامل الخارجية.'
+                explanation: 'السيليلوز هو المركب الذي يدخل في تركيب جدران الخلايا النباتية.'
             },
             question2: {
                 answer: 'البنكرياس',
-                explanation: 'البنكرياس يفرز الإنزيمات الهاضمة التي تساعد في هضم البروتينات والدهون والكربوهيدرات في الأمعاء الدقيقة. هذه الإنزيمات تشمل الأميليز الذي يهضم الكربوهيدرات، والليباز الذي يهضم الدهون، والتريبسين والكيموتريبسين اللذين يهضمان البروتينات. يعمل البنكرياس أيضًا على إفراز الهرمونات مثل الإنسولين والجلوكاجون التي تنظم مستوى السكر في الدم.'
+                explanation: 'البنكرياس يفرز إنزيمات هاضمة تساعد في هضم الطعام.'
             },
             question3: {
-                answer: 'النيفرون',
-                explanation: 'النيفرون هو الوحدة الوظيفية للكلى، وهو المسؤول عن تنقية الدم وإنتاج البول. يتكون النيفرون من جزء يقوم بترشيح الدم يسمى الكُبَيْبَة، ومن أنابيب دقيقة تعيد امتصاص الماء والمواد الضرورية إلى الدم، وتفصل الفضلات لتكوين البول. تعمل النيفرونات معًا للحفاظ على توازن السوائل والأملاح في الجسم وإزالة الفضلات.'
+                answer: 'النفرون',
+                explanation: 'النفرون هو الوحدة الوظيفية للكلى حيث يتم تصفية الدم وإنتاج البول.'
             },
             question4: {
                 answer: 'الريبوسومات',
-                explanation: 'الريبوسومات هي العضيات المسؤولة عن تخليق البروتين في الخلية. تتكون من RNA والبروتينات وتترجم المعلومات الوراثية من RNA المرسال (mRNA) إلى سلاسل من الأحماض الأمينية لتشكيل البروتينات.'
+                explanation: 'الريبوسومات هي عضية مسؤولة عن تخليق البروتين في الخلية.'
             },
             question5: {
                 answer: 'الجمجمة',
-                explanation: 'الهيكل العظمي المحوري يشمل العظام التي تدعم وتحمي أعضاء الجسم الرئيسية، ومنها الجمجمة التي تحمي الدماغ وتدعم هيكل الوجه.'
+                explanation: 'الجمجمة هي العظم الذي يحمي الدماغ من الإصابات.'
             },
             question6: {
                 answer: 'القنوات الهلالية',
-                explanation: 'القنوات الهلالية في الأذن الداخلية مسؤولة عن توازن الجسم من خلال استشعار حركات الرأس وإرسال إشارات إلى الدماغ.'
+                explanation: 'القنوات الهلالية في الأذن تلعب دوراً رئيسياً في توازن الجسم.'
             },
             question7: {
                 answer: 'خلايا الدم الحمراء',
-                explanation: 'خلايا الدم الحمراء تحتوي على الهيموغلوبين الذي يرتبط بالأكسجين وينقله من الرئتين إلى جميع أنحاء الجسم.'
+                explanation: 'خلايا الدم الحمراء تحتوي على الهيموجلوبين الذي ينقل الأكسجين.'
             },
             question8: {
                 answer: 'الجهاز العصبي',
-                explanation: 'الجهاز العصبي، وخاصة منطقة تحت المهاد في الدماغ، يتحكم في تنظيم درجة حرارة الجسم من خلال إشارات للغدد العرقية والأوعية الدموية.'
+                explanation: 'الجهاز العصبي ينظم درجة حرارة الجسم عن طريق التحكم في التعرق وتدفق الدم.'
             },
             question9: {
                 answer: 'الخصية',
-                explanation: 'الخصية تنتج الهرمونات الجنسية الذكرية مثل التستوستيرون، الذي يلعب دورًا رئيسيًا في تطوير الخصائص الجنسية الثانوية.'
+                explanation: 'الخصية تنتج الهرمونات الجنسية الذكرية مثل التستوستيرون.'
             },
             question10: {
                 answer: 'الجلوكوز',
-                explanation: 'الجلوكوز هو مركب عضوي يعد مصدرًا رئيسيًا للطاقة في الخلايا.'
+                explanation: 'الجلوكوز هو المصدر الرئيسي للطاقة في الخلية.'
             },
             question11: {
                 answer: 'النخاع المستطيل',
-                explanation: 'النخاع المستطيل في الدماغ يتحكم في العديد من الوظائف الحيوية اللاإرادية، بما في ذلك التنفس.'
+                explanation: 'النخاع المستطيل يتحكم في وظائف حيوية مثل التنفس وضربات القلب.'
             },
             question12: {
-                answer: 'الكربوهيدرات',
-                explanation: 'الكربوهيدرات هي المصدر الرئيسي للطاقة في الخلايا، حيث يتم تكسيرها إلى جلوكوز يستخدم في إنتاج الطاقة.'
+                answer: 'الببسين',
+                explanation: 'الببسين هو الإنزيم الذي يساعد في هضم البروتينات في المعدة.'
             },
             question13: {
-                answer: 'tRNA',
-                explanation: 'tRNA هو الحمض النووي الريبي الناقل الذي ينقل الأحماض الأمينية إلى الريبوسوم لتكوين البروتين.'
+                answer: 'القلب',
+                explanation: 'القلب يعمل كمضخة للدم في الجسم، يضخ الدم إلى جميع أجزاء الجسم.'
             },
             question14: {
                 answer: 'الميتوكوندريا',
-                explanation: 'الميتوكوندريا هي عضية الخلية التي تُنتج الطاقة من خلال عملية التنفس الخلوي.'
+                explanation: 'الميتوكوندريا هي العضية المسؤولة عن إنتاج الطاقة في الخلية.'
             },
             question15: {
-                answer: 'الحشرة',
-                explanation: 'الحشرات تنتمي إلى المفصليات، وهي مجموعة من الكائنات التي تتميز بوجود هيكل خارجي وجسم مقسم إلى أجزاء مفصلية.'
+                answer: 'المفصليات',
+                explanation: 'الحشرات تنتمي إلى شعبة المفصليات، التي تشمل أيضاً العناكب والقشريات.'
             },
             question16: {
                 answer: 'الطحال',
-                explanation: 'الطحال هو جزء من الجهاز المناعي، يساعد في ترشيح الدم وإنتاج الخلايا المناعية.'
+                explanation: 'الطحال يرشح الدم ويشارك في إنتاج خلايا مناعية.'
             },
             question17: {
                 answer: 'نخاع العظام',
-                explanation: 'نخاع العظام ينتج خلايا الدم الحمراء التي تحمل الأكسجين إلى جميع أنحاء الجسم.'
+                explanation: 'نخاع العظام هو المسؤول عن إنتاج خلايا الدم الحمراء والبيضاء.'
             },
             question18: {
                 answer: 'اللايسين',
-                explanation: 'اللايسين هو حمض أميني أساسي يجب الحصول عليه من النظام الغذائي لأنه لا يمكن للجسم إنتاجه.'
+                explanation: 'اللايسين هو حمض أميني أساسي يجب الحصول عليه من الغذاء لأن الجسم لا يستطيع إنتاجه.'
             },
             question19: {
-                answer: 'الأظافر',
-                explanation: 'الأظافر تتكون من بروتين الكيراتين، وهو نفس البروتين الموجود في الشعر والجلد.'
+                answer: 'الكيراتين',
+                explanation: 'الكيراتين هو البروتين الذي يشكل بنية الأظافر والشعر.'
             },
             question20: {
                 answer: 'الجليكوجين',
-                explanation: 'الجليكوجين هو شكل مخزن من الجلوكوز في الكبد والعضلات يستخدم كاحتياطي للطاقة.'
+                explanation: 'الجليكوجين هو الشكل المخزن للجلوكوز في الكبد والعضلات.'
             }
         };
 
         function checkAnswers() {
             const form = document.getElementById('quizForm');
-            const formData = new FormData(form);
+            const resultDiv = document.getElementById('result');
             const wrongAnswersDiv = document.getElementById('wrongAnswers');
-            wrongAnswersDiv.innerHTML = '';
-            let correctCount = 0;
-            let totalQuestions = 20;
+            let score = 0;
+            let wrongAnswers = '';
 
-            for (let i = 1; i <= totalQuestions; i++) {
-                let questionName = 'question' + i;
-                let userAnswer = formData.get(questionName);
-                let correctAnswer = correctAnswers[questionName].answer;
+            for (const [question, info] of Object.entries(correctAnswers)) {
+                const userAnswer = form[question].value;
+                const explanation = info.explanation;
 
-                if (userAnswer === correctAnswer) {
-                    correctCount++;
+                if (userAnswer === info.answer) {
+                    score++;
                 } else {
-                    let wrongAnswerDiv = document.createElement('div');
-                    wrongAnswerDiv.classList.add('wrong-answer');
-                    wrongAnswerDiv.innerHTML = `السؤال ${i}: <span class="correct-answer">${correctAnswer}</span>
-                        <br> شرح: <span class="explanation">${correctAnswers[questionName].explanation}</span>`;
-                    wrongAnswersDiv.appendChild(wrongAnswerDiv);
+                    wrongAnswers += `<div class="wrong-answer"><strong>إجابة خاطئة لسؤال ${question.slice()}:</strong><br>إجابتك: ${userAnswer || 'لم يتم الإجابة'}<br>الإجابة الصحيحة: ${info.answer}<br><span class="explanation">التوضيح: ${explanation}</span></div><br>`;
                 }
             }
 
-            let resultDiv = document.getElementById('result');
-            resultDiv.textContent = `لقد أجبت بشكل صحيح على ${correctCount} من ${totalQuestions} سؤال.`;
+            resultDiv.innerHTML = `<h2>نتيجتك: ${score} من ${Object.keys(correctAnswers).length}</h2>`;
+            wrongAnswersDiv.innerHTML = wrongAnswers;
         }
+
+        let remainingTime = 2 * 60 * 60; // ساعتين بالأثواني
+
+        function updateTimer() {
+            const timerDiv = document.getElementById('timer');
+            const hours = Math.floor(remainingTime / 3600);
+            const minutes = Math.floor((remainingTime % 3600) / 60);
+            const seconds = remainingTime % 60;
+
+            timerDiv.innerHTML = `الوقت المتبقي: ${hours}:${minutes}:${seconds}`;
+            if (remainingTime > 0) {
+                remainingTime--;
+                setTimeout(updateTimer, 1000);
+            } else {
+                checkAnswers();
+                alert('انتهى الوقت! تم إرسال الإجابات.');
+            }
+        }
+
+        updateTimer();
     </script>
 </body>
 </html>

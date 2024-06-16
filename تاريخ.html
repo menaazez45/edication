@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار التاريخ - 20 سؤالاً</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .results {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e0ffe0;
+            border-radius: 8px;
+        }
+        .wrong {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="timer">الوقت المتبقي: 2:00:00</div>
+
+        <h1>اختبار التاريخ - 20 سؤالاً</h1>
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>سؤال 1: ما هي أول عاصمة للإسلام؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="المدينة المنورة"> المدينة المنورة</label><br>
+                    <label><input type="radio" name="q1" value="مكة المكرمة"> مكة المكرمة</label><br>
+                    <label><input type="radio" name="q1" value="القاهرة"> القاهرة</label><br>
+                    <label><input type="radio" name="q1" value="بغداد"> بغداد</label><br>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>سؤال 2: في أي عام وقعت ثورة أكتوبر في روسيا؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="1917"> 1917</label><br>
+                    <label><input type="radio" name="q2" value="1918"> 1918</label><br>
+                    <label><input type="radio" name="q2" value="1920"> 1920</label><br>
+                    <label><input type="radio" name="q2" value="1905"> 1905</label><br>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>سؤال 3: ما هي العاصمة السابقة للإمبراطورية الرومانية؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="روما"> روما</label><br>
+                    <label><input type="radio" name="q3" value="القسطنطينية"> القسطنطينية</label><br>
+                    <label><input type="radio" name="q3" value="أنطاكية"> أنطاكية</label><br>
+                    <label><input type="radio" name="q3" value="ألكسندريا"> ألكسندريا</label><br>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h3>سؤال 4: من هو الشخص الذي قام برحلة اكتشاف البرازيل؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="فاسكو دا غاما"> فاسكو دا غاما</label><br>
+                    <label><input type="radio" name="q4" value="كريستوفر كولومبوس"> كريستوفر كولومبوس</label><br>
+                    <label><input type="radio" name="q4" value="فرناندو ماجلان"> فرناندو ماجلان</label><br>
+                    <label><input type="radio" name="q4" value="بارثولوميو دياز"> بارثولوميو دياز</label><br>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <h3>سؤال 5: متى وقعت بداية الحرب العالمية الأولى؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="1914"> 1914</label><br>
+                    <label><input type="radio" name="q5" value="1916"> 1916</label><br>
+                    <label><input type="radio" name="q5" value="1918"> 1918</label><br>
+                    <label><input type="radio" name="q5" value="1920"> 1920</label><br>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <h3>سؤال 6: من هو مؤسس الدولة العثمانية؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="أورهان غازي"> أورهان غازي</label><br>
+                    <label><input type="radio" name="q6" value="سليمان القانوني"> سليمان القانوني</label><br>
+                    <label><input type="radio" name="q6" value="عثمان بن أرطغرل"> عثمان بن أرطغرل</label><br>
+                    <label><input type="radio" name="q6" value="محمد الفاتح"> محمد الفاتح</label><br>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <h3>سؤال 7: ما هي الحرب التي تميزت بالمواجهات الجوية بين "القيثارة" و"البيولة"؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="الحرب العالمية الأولى"> الحرب العالمية الأولى</label><br>
+                    <label><input type="radio" name="q7" value="الحرب الفاشلة"> الحرب الفاشلة</label><br>
+                    <label><input type="radio" name="q7" value="الحرب الخمسونية"> الحرب الخمسونية</label><br>
+                    <label><input type="radio" name="q7" value="الحرب السريعة"> الحرب السريعة</label><br>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <h3>سؤال 8: ما هو الاسم الذي أطلق على الحرب بين أثينا وإسبرطة؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="الحرب البيلوبونيسية"> الحرب البيلوبونيسية</label><br>
+                    <label><input type="radio" name="q8" value="الحرب الفارسية"> الحرب الفارسية</label><br>
+                    <label><input type="radio" name="q8" value="الحرب البونية"> الحرب البونية</label><br>
+                    <label><input type="radio" name="q8" value="الحرب الطروادية"> الحرب الطروادية</label><br>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <h3>سؤال 9: من هو أول إمبراطور روماني؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="يوليوس قيصر"> يوليوس قيصر</label><br>
+                    <label><input type="radio" name="q9" value="أغسطس قيصر"> أغسطس قيصر</label><br>
+                    <label><input type="radio" name="q9" value="نيرون"> نيرون</label><br>
+                    <label><input type="radio" name="q9" value="كاليغولا"> كاليغولا</label><br>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <h3>سؤال 10: في أي عام تأسست الأمم المتحدة؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="1919"> 1919</label><br>
+                    <label><input type="radio"name="q10" value="1939"> 1939</label><br>
+                    <label><input type="radio" name="q10" value="1945"> 1945</label><br>
+                    <label><input type="radio" name="q10" value="1950"> 1950</label><br>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question">
+                <h3>سؤال 11: من هو القائد الذي هزم نابليون في معركة واترلو؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="دوق ولينغتون"> دوق ولينغتون</label><br>
+                    <label><input type="radio" name="q11" value="نيلسون"> نيلسون</label><br>
+                    <label><input type="radio" name="q11" value="فريدريك الكبير"> فريدريك الكبير</label><br>
+                    <label><input type="radio" name="q11" value="بسمارك"> بسمارك</label><br>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question">
+                <h3>سؤال 12: أي حضارة قديمة بنت الأهرامات؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="الحضارة المصرية القديمة"> الحضارة المصرية القديمة</label><br>
+                    <label><input type="radio" name="q12" value="الحضارة البابلية"> الحضارة البابلية</label><br>
+                    <label><input type="radio" name="q12" value="الحضارة الآشورية"> الحضارة الآشورية</label><br>
+                    <label><input type="radio" name="q12" value="الحضارة الفينيقية"> الحضارة الفينيقية</label><br>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question">
+                <h3>سؤال 13: من هو مؤسس المملكة العربية السعودية؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="عبد العزيز آل سعود"> عبد العزيز آل سعود</label><br>
+                    <label><input type="radio" name="q13" value="سعود بن عبد العزيز"> سعود بن عبد العزيز</label><br>
+                    <label><input type="radio" name="q13" value="فيصل بن عبد العزيز"> فيصل بن عبد العزيز</label><br>
+                    <label><input type="radio" name="q13" value="خالد بن عبد العزيز"> خالد بن عبد العزيز</label><br>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question">
+                <h3>سؤال 14: في أي عام انهار الاتحاد السوفيتي؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="1989"> 1989</label><br>
+                    <label><input type="radio" name="q14" value="1991"> 1991</label><br>
+                    <label><input type="radio" name="q14" value="1993"> 1993</label><br>
+                    <label><input type="radio" name="q14" value="1995"> 1995</label><br>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question">
+                <h3>سؤال 15: من هو المؤرخ الذي لقب بـ "أبو التاريخ"؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="هيرودوت"> هيرودوت</label><br>
+                    <label><input type="radio" name="q15" value="ثوسيديديس"> ثوسيديديس</label><br>
+                    <label><input type="radio" name="q15" value="بلوتارخوس"> بلوتارخوس</label><br>
+                    <label><input type="radio" name="q15" value="ابن خلدون"> ابن خلدون</label><br>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question">
+                <h3>سؤال 16: ما هو الاسم الذي أطلق على الحرب بين البريطانيين والبوير في جنوب أفريقيا؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q16" value="حرب البوير"> حرب البوير</label><br>
+                    <label><input type="radio" name="q16" value="الحرب الزولوية"> الحرب الزولوية</label><br>
+                    <label><input type="radio" name="q16" value="حرب الماتابيلي"> حرب الماتابيلي</label><br>
+                    <label><input type="radio" name="q16" value="الحرب الأفريكانية"> الحرب الأفريكانية</label><br>
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question">
+                <h3>سؤال 17: أي من الشخصيات التالية لم تكن زعيمة للاتحاد السوفيتي؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q17" value="جوزيف ستالين"> جوزيف ستالين</label><br>
+                    <label><input type="radio" name="q17" value="فلاديمير لينين"> فلاديمير لينين</label><br>
+                    <label><input type="radio" name="q17" value="ليون تروتسكي"> ليون تروتسكي</label><br>
+                    <label><input type="radio" name="q17" value="نيكيتا خروتشوف"> نيكيتا خروتشوف</label><br>
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="question">
+                <h3>سؤال 18: في أي مدينة تم اغتيال الأرشيدوق فرديناند، ما أشعل الحرب العالمية الأولى؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q18" value="فيينا"> فيينا</label><br>
+                    <label><input type="radio" name="q18" value="سراييفو"> سراييفو</label><br>
+                    <label><input type="radio" name="q18" value="برلين"> برلين</label><br>
+                    <label><input type="radio" name="q18" value="بودابست"> بودابست</label><br>
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question">
+                <h3>سؤال 19: من هو الملك الفرنسي الذي تم إعدامه خلال الثورة الفرنسية؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q19" value="لويس الرابع عشر"> لويس الرابع عشر</label><br>
+                    <label><input type="radio" name="q19" value="لويس الخامس عشر"> لويس الخامس عشر</label><br>
+                    <label><input type="radio" name="q19" value="لويس السادس عشر"> لويس السادس عشر</label><br>
+                    <label><input type="radio" name="q19" value="لويس السابع عشر"> لويس السابع عشر</label><br>
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question">
+                <h3>سؤال 20: أي حضارة قديمة كانت مسؤولة عن بناء برج بابل؟</h3>
+                <div class="options">
+                    <label><input type="radio" name="q20" value="الحضارة البابلية"> الحضارة البابلية</label><br>
+                    <label><input type="radio" name="q20" value="الحضارة الآشورية"> الحضارة الآشورية</label><br>
+                    <label><input type="radio" name="q20" value="الحضارة السومرية"> الحضارة السومرية</label><br>
+                    <label><input type="radio" name="q20" value="الحضارة الأكادية"> الحضارة الأكادية</label><br>
+                </div>
+            </div>
+
+            <div class="submit-btn">
+                <button type="button" onclick="checkAnswers()">تقديم الاختبار</button>
+            </div>
+        </form>
+        <div class="results" id="results"></div>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            q1: "المدينة المنورة",
+            q2: "1917",
+            q3: "روما",
+            q4: "كريستوفر كولومبوس",
+            q5: "1914",
+            q6: "عثمان بن أرطغرل",
+            q7: "الحرب العالمية الأولى",
+            q8: "الحرب البيلوبونيسية",
+            q9: "أغسطس قيصر",
+            q10: "1945",
+            q11: "دوق ولينغتون",
+            q12: "الحضارة المصرية القديمة",
+            q13: "عبد العزيز آل سعود",
+            q14: "1991",
+            q15: "هيرودوت",
+            q16: "حرب البوير",
+            q17: "ليون تروتسكي",
+            q18: "سراييفو",
+            q19: "لويس السادس عشر",
+            q20: "الحضارة البابلية"
+        };
+
+        function checkAnswers() {
+            const form = document.getElementById('quizForm');
+            const results = document.getElementById('results');
+            let score = 0;
+            let totalQuestions = 20;
+            let output = "<h3>النتائج:</h3><ul>";
+
+            for (const [question, correctAnswer] of Object.entries(correctAnswers)) {
+                const userAnswer = form.elements[question].value; // تعديل هنا للوصول الصحيح لعنصر الإجابة
+                if (userAnswer === correctAnswer) {
+                    score++;
+                    output += `<li>${question}: إجابة صحيحة (${correctAnswer})</li>`;
+                } else {
+                    output += `<li>${question}: <span class="wrong">إجابة خاطئة</span> (إجابتك: ${userAnswer || 'لم تجب'}, الإجابة الصحيحة: ${correctAnswer})</li>`;
+                }
+            }
+
+            output += `</ul><h3>مجموع النقاط: ${score} من ${totalQuestions}</h3>`;
+            results.innerHTML = output;
+        }
+        let remainingTime = 2 * 60 * 60; // ساعتين بالأثواني
+
+        function updateTimer() {
+            const timerDiv = document.getElementById('timer');
+            const hours = Math.floor(remainingTime / 3600);
+            const minutes = Math.floor((remainingTime % 3600) / 60);
+            const seconds = remainingTime % 60;
+
+            timerDiv.innerHTML = `الوقت المتبقي: ${hours}:${minutes}:${seconds}`;
+            if (remainingTime > 0) {
+                remainingTime--;
+                setTimeout(updateTimer, 1000);
+            } else {
+                checkAnswers();
+                alert('انتهى الوقت! تم إرسال الإجابات.');
+            }
+        }
+
+        updateTimer();
+    </script>
+</body>
+</html>
