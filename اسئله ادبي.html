@@ -61,6 +61,24 @@
             background-color: #0056b3;
             transform: translateY(-3px);
         }
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
     </style>
     <script>
         function downloadSelectedFile() {
@@ -73,6 +91,10 @@
     </script>
 </head>
 <body>
+    <div class="navbar">
+        <a href="اسئله ادبي.html" class="button">اسئله ادبي</a>
+        <a href="اختبارات ادبي.html" class="button">اختبارات ادبي</a>
+    </div>
     <div class="container">
         <h1>تحميل امتحان الصف الثالث الثانوي أدبي</h1>
         <select id="fileSelect">
