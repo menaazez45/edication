@@ -8,43 +8,55 @@
         body {
             font-family: Arial, sans-serif;
             direction: rtl;
-            text-align: right;
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3 {
             text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #2c3e50;
         }
         .question {
             margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: right;
         }
-        .options label {
-            display: block;
-            margin-bottom: 10px;
+        .question h3 {
+            margin: 0 0 10px 0;
         }
-        .options input {
-            margin-right: 10px;
+        .timer {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #e74c3c;
         }
-        .submit-btn {
-            text-align: center;
+        .result {
             margin-top: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: right;
         }
-        .results {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #e0ffe0;
-            border-radius: 8px;
+        .result p {
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
         }
         .wrong {
-            color: red;
+            color: #e74c3c;
         }
     </style>
 </head>
@@ -149,201 +161,219 @@
                     <label><input type="radio" name="q9" value="يوليوس قيصر"> يوليوس قيصر</label><br>
                     <label><input type="radio" name="q9" value="أغسطس قيصر"> أغسطس قيصر</label><br>
                     <label><input type="radio" name="q9" value="نيرون"> نيرون</label><br>
-                    <label><input type="radio" name="q9" value="كاليغولا"> كاليغولا</label><br>
+                    <label><input type="radio" name="q9" value="كاليجولا"> كاليجولا</label><br>
                 </div>
             </div>
 
             <!-- Question 10 -->
             <div class="question">
-                <h3>سؤال 10: في أي عام تأسست الأمم المتحدة؟</h3>
+                <h3>سؤال 10: ما هو العام الذي استقلت فيه الجزائر عن فرنسا؟</h3>
                 <div class="options">
-                    <label><input type="radio" name="q10" value="1919"> 1919</label><br>
-                    <label><input type="radio"name="q10" value="1939"> 1939</label><br>
-                    <label><input type="radio" name="q10" value="1945"> 1945</label><br>
-                    <label><input type="radio" name="q10" value="1950"> 1950</label><br>
+                    <label><input type="radio" name="q10" value="1960"> 1960</label><br>
+                    <label><input type="radio" name="q10" value="1961"> 1961</label><br>
+                    <label><input type="radio" name="q10" value="1962"> 1962</label><br>
+                    <label><input type="radio" name="q10" value="1963"> 1963</label><br>
                 </div>
             </div>
 
             <!-- Question 11 -->
             <div class="question">
-                <h3>سؤال 11: من هو القائد الذي هزم نابليون في معركة واترلو؟</h3>
+                <h3>سؤال 11: من هو الخليفة العباسي الذي بنى بغداد؟</h3>
                 <div class="options">
-                    <label><input type="radio" name="q11" value="دوق ولينغتون"> دوق ولينغتون</label><br>
-                    <label><input type="radio" name="q11" value="نيلسون"> نيلسون</label><br>
-                    <label><input type="radio" name="q11" value="فريدريك الكبير"> فريدريك الكبير</label><br>
-                    <label><input type="radio" name="q11" value="بسمارك"> بسمارك</label><br>
+                    <label><input type="radio" name="q11" value="أبو جعفر المنصور"> أبو جعفر المنصور</label><br>
+                    <label><input type="radio" name="q11" value="هارون الرشيد"> هارون الرشيد</label><br>
+                    <label><input type="radio" name="q11" value="المعتصم بالله"> المعتصم بالله</label><br>
+                    <label><input type="radio" name="q11" value="المأمون"> المأمون</label><br>
                 </div>
             </div>
 
             <!-- Question 12 -->
             <div class="question">
-                <h3>سؤال 12: أي حضارة قديمة بنت الأهرامات؟</h3>
+                <h3>سؤال 12: في أي عام تأسست جامعة الأزهر؟</h3>
                 <div class="options">
-                    <label><input type="radio" name="q12" value="الحضارة المصرية القديمة"> الحضارة المصرية القديمة</label><br>
-                    <label><input type="radio" name="q12" value="الحضارة البابلية"> الحضارة البابلية</label><br>
-                    <label><input type="radio" name="q12" value="الحضارة الآشورية"> الحضارة الآشورية</label><br>
-                    <label><input type="radio" name="q12" value="الحضارة الفينيقية"> الحضارة الفينيقية</label><br>
+                    <label><input type="radio" name="q12" value="970"> 970</label><br>
+                    <label><input type="radio" name="q12" value="980"> 980</label><br>
+                    <label><input type="radio" name="q12" value="990"> 990</label><br>
+                    <label><input type="radio" name="q12" value="1000"> 1000</label><br>
                 </div>
             </div>
 
             <!-- Question 13 -->
             <div class="question">
-                <h3>سؤال 13: من هو مؤسس المملكة العربية السعودية؟</h3>
+                <h3>سؤال 13: من هو الملك الإنجليزي الذي وقّع على الميثاق الأعظم (ماجنا كارتا)؟</h3>
                 <div class="options">
-                    <label><input type="radio" name="q13" value="عبد العزيز آل سعود"> عبد العزيز آل سعود</label><br>
-                    <label><input type="radio" name="q13" value="سعود بن عبد العزيز"> سعود بن عبد العزيز</label><br>
-                    <label><input type="radio" name="q13" value="فيصل بن عبد العزيز"> فيصل بن عبد العزيز</label><br>
-                    <label><input type="radio" name="q13" value="خالد بن عبد العزيز"> خالد بن عبد العزيز</label><br>
+                    <label><input type="radio" name="q13" value="جون"> جون</label><br>
+                    <label><input type="radio" name="q13" value="ريتشارد قلب الأسد"> ريتشارد قلب الأسد</label><br>
+                    <label><input type="radio" name="q13" value="هنري الثامن"> هنري الثامن</label><br>
+                    <label><input type="radio" name="q13" value="إدوارد الأول"> إدوارد الأول</label><br>
                 </div>
             </div>
 
             <!-- Question 14 -->
             <div class="question">
-                <h3>سؤال 14: في أي عام انهار الاتحاد السوفيتي؟</h3>
+                <h3>سؤال 14: من هو القائد القرطاجي الذي قاد جيشه عبر جبال الألب لغزو روما؟</h3>
                 <div class="options">
-                    <label><input type="radio" name="q14" value="1989"> 1989</label><br>
-                    <label><input type="radio" name="q14" value="1991"> 1991</label><br>
-                    <label><input type="radio" name="q14" value="1993"> 1993</label><br>
-                    <label><input type="radio" name="q14" value="1995"> 1995</label><br>
+                    <label><input type="radio" name="q14" value="هنيبعل"> هنيبعل</label><br>
+                    <label><input type="radio" name="q14" value="أشيل"> أشيل</label><br>
+                    <label><input type="radio" name="q14" value="أغاممنون"> أغاممنون</label><br>
+                    <label><input type="radio" name="q14" value="بيروس"> بيروس</label><br>
                 </div>
             </div>
 
             <!-- Question 15 -->
             <div class="question">
-                <h3>سؤال 15: من هو المؤرخ الذي لقب بـ "أبو التاريخ"؟</h3>
+                <h3>سؤال 15: متى حدث فتح مكة؟</h3>
                 <div class="options">
-                    <label><input type="radio" name="q15" value="هيرودوت"> هيرودوت</label><br>
-                    <label><input type="radio" name="q15" value="ثوسيديديس"> ثوسيديديس</label><br>
-                    <label><input type="radio" name="q15" value="بلوتارخوس"> بلوتارخوس</label><br>
-                    <label><input type="radio" name="q15" value="ابن خلدون"> ابن خلدون</label><br>
+                    <label><input type="radio" name="q15" value="620"> 620</label><br>
+                    <label><input type="radio" name="q15" value="630"> 630</label><br>
+                    <label><input type="radio" name="q15" value="640"> 640</label><br>
+                    <label><input type="radio" name="q15" value="650"> 650</label><br>
                 </div>
             </div>
 
             <!-- Question 16 -->
             <div class="question">
-                <h3>سؤال 16: ما هو الاسم الذي أطلق على الحرب بين البريطانيين والبوير في جنوب أفريقيا؟</h3>
+                <h3>سؤال 16: من هو الرئيس الأمريكي الذي أطلق مبدأ ترومان؟</h3>
                 <div class="options">
-                    <label><input type="radio" name="q16" value="حرب البوير"> حرب البوير</label><br>
-                    <label><input type="radio" name="q16" value="الحرب الزولوية"> الحرب الزولوية</label><br>
-                    <label><input type="radio" name="q16" value="حرب الماتابيلي"> حرب الماتابيلي</label><br>
-                    <label><input type="radio" name="q16" value="الحرب الأفريكانية"> الحرب الأفريكانية</label><br>
+                    <label><input type="radio" name="q16" value="فرانكلين روزفلت"> فرانكلين روزفلت</label><br>
+                    <label><input type="radio" name="q16" value="هاري ترومان"> هاري ترومان</label><br>
+                    <label><input type="radio" name="q16" value="جون كينيدي"> جون كينيدي</label><br>
+                    <label><input type="radio" name="q16" value="دوايت أيزنهاور"> دوايت أيزنهاور</label><br>
                 </div>
             </div>
 
             <!-- Question 17 -->
             <div class="question">
-                <h3>سؤال 17: أي من الشخصيات التالية لم تكن زعيمة للاتحاد السوفيتي؟</h3>
+                <h3>سؤال 17: من هو الملك الفرنسي الذي بُني قصر فرساي في عهده؟</h3>
                 <div class="options">
-                    <label><input type="radio" name="q17" value="جوزيف ستالين"> جوزيف ستالين</label><br>
-                    <label><input type="radio" name="q17" value="فلاديمير لينين"> فلاديمير لينين</label><br>
-                    <label><input type="radio" name="q17" value="ليون تروتسكي"> ليون تروتسكي</label><br>
-                    <label><input type="radio" name="q17" value="نيكيتا خروتشوف"> نيكيتا خروتشوف</label><br>
+                    <label><input type="radio" name="q17" value="لويس الرابع عشر"> لويس الرابع عشر</label><br>
+                    <label><input type="radio" name="q17" value="لويس الخامس عشر"> لويس الخامس عشر</label><br>
+                    <label><input type="radio" name="q17" value="لويس السادس عشر"> لويس السادس عشر</label><br>
+                    <label><input type="radio" name="q17" value="هنري الرابع"> هنري الرابع</label><br>
                 </div>
             </div>
 
             <!-- Question 18 -->
             <div class="question">
-                <h3>سؤال 18: في أي مدينة تم اغتيال الأرشيدوق فرديناند، ما أشعل الحرب العالمية الأولى؟</h3>
+                <h3>سؤال 18: ما هو الحدث الذي أشعل فتيل الحرب العالمية الثانية؟</h3>
                 <div class="options">
-                    <label><input type="radio" name="q18" value="فيينا"> فيينا</label><br>
-                    <label><input type="radio" name="q18" value="سراييفو"> سراييفو</label><br>
-                    <label><input type="radio" name="q18" value="برلين"> برلين</label><br>
-                    <label><input type="radio" name="q18" value="بودابست"> بودابست</label><br>
+                    <label><input type="radio" name="q18" value="غزو بولندا"> غزو بولندا</label><br>
+                    <label><input type="radio" name="q18" value="اغتيال الأرشيدوق فرديناند"> اغتيال الأرشيدوق فرديناند</label><br>
+                    <label><input type="radio" name="q18" value="غزو فرنسا"> غزو فرنسا</label><br>
+                    <label><input type="radio" name="q18" value="الهجوم على بيرل هاربر"> الهجوم على بيرل هاربر</label><br>
                 </div>
             </div>
 
             <!-- Question 19 -->
             <div class="question">
-                <h3>سؤال 19: من هو الملك الفرنسي الذي تم إعدامه خلال الثورة الفرنسية؟</h3>
+                <h3>سؤال 19: من هو الفيلسوف الذي أعدمه حكام أثينا بتهمة إفساد الشباب؟</h3>
                 <div class="options">
-                    <label><input type="radio" name="q19" value="لويس الرابع عشر"> لويس الرابع عشر</label><br>
-                    <label><input type="radio" name="q19" value="لويس الخامس عشر"> لويس الخامس عشر</label><br>
-                    <label><input type="radio" name="q19" value="لويس السادس عشر"> لويس السادس عشر</label><br>
-                    <label><input type="radio" name="q19" value="لويس السابع عشر"> لويس السابع عشر</label><br>
+                    <label><input type="radio" name="q19" value="سقراط"> سقراط</label><br>
+                    <label><input type="radio" name="q19" value="أفلاطون"> أفلاطون</label><br>
+                    <label><input type="radio" name="q19" value="أرسطو"> أرسطو</label><br>
+                    <label><input type="radio" name="q19" value="هيراقليطس"> هيراقليطس</label><br>
                 </div>
             </div>
 
             <!-- Question 20 -->
             <div class="question">
-                <h3>سؤال 20: أي حضارة قديمة كانت مسؤولة عن بناء برج بابل؟</h3>
+                <h3>سؤال 20: من هو الرحالة المغربي الذي ألف كتاب "تحفة النظار في غرائب الأمصار وعجائب الأسفار"؟</h3>
                 <div class="options">
-                    <label><input type="radio" name="q20" value="الحضارة البابلية"> الحضارة البابلية</label><br>
-                    <label><input type="radio" name="q20" value="الحضارة الآشورية"> الحضارة الآشورية</label><br>
-                    <label><input type="radio" name="q20" value="الحضارة السومرية"> الحضارة السومرية</label><br>
-                    <label><input type="radio" name="q20" value="الحضارة الأكادية"> الحضارة الأكادية</label><br>
+                    <label><input type="radio" name="q20" value="ابن بطوطة"> ابن بطوطة</label><br>
+                    <label><input type="radio" name="q20" value="ابن جبير"> ابن جبير</label><br>
+                    <label><input type="radio" name="q20" value="الشريف الإدريسي"> الشريف الإدريسي</label><br>
+                    <label><input type="radio" name="q20" value="ابن رشد"> ابن رشد</label><br>
                 </div>
             </div>
 
-            <div class="submit-btn">
-                <button type="button" onclick="checkAnswers()">تقديم الاختبار</button>
-            </div>
+            <button type="button" onclick="submitQuiz()">إرسال الإجابات</button>
         </form>
-        <div class="results" id="results"></div>
+
+        <div class="result" id="result"></div>
     </div>
 
     <script>
         const correctAnswers = {
             q1: "المدينة المنورة",
             q2: "1917",
-            q3: "روما",
-            q4: "كريستوفر كولومبوس",
-            q5: "1914",
-            q6: "عثمان بن أرطغرل",
-            q7: "الحرب العالمية الأولى",
-            q8: "الحرب البيلوبونيسية",
-            q9: "أغسطس قيصر",
-            q10: "1945",
-            q11: "دوق ولينغتون",
-            q12: "الحضارة المصرية القديمة",
-            q13: "عبد العزيز آل سعود",
-            q14: "1991",
-            q15: "هيرودوت",
-            q16: "حرب البوير",
-            q17: "ليون تروتسكي",
-            q18: "سراييفو",
-            q19: "لويس السادس عشر",
-            q20: "الحضارة البابلية"
+            q3: "الملكة إليزابيث الأولى",
+            q4: "الكسندر الأكبر",
+            q5: "محمد علي باشا",
+            q6: "أبراهام لينكون",
+            q7: "ثيودور روزفلت",
+            q8: "توت عنخ آمون",
+            q9: "نيرون",
+            q10: "1962",
+            q11: "أبو جعفر المنصور",
+            q12: "970",
+            q13: "جون",
+            q14: "هنيبعل",
+            q15: "630",
+            q16: "هاري ترومان",
+            q17: "لويس الرابع عشر",
+            q18: "غزو بولندا",
+            q19: "سقراط",
+            q20: "ابن بطوطة"
         };
 
-        function checkAnswers() {
-            const form = document.getElementById('quizForm');
-            const results = document.getElementById('results');
+        function submitQuiz() {
+            const form = document.querySelector('form');
+            const formData = new FormData(form);
             let score = 0;
             let totalQuestions = 20;
-            let output = "<h3>النتائج:</h3><ul>";
+            let incorrectAnswers = [];
 
-            for (const [question, correctAnswer] of Object.entries(correctAnswers)) {
-                const userAnswer = form.elements[question].value; // تعديل هنا للوصول الصحيح لعنصر الإجابة
-                if (userAnswer === correctAnswer) {
+            for (let [key, value] of formData.entries()) {
+                if (value === correctAnswers[key]) {
                     score++;
-                    output += `<li>${question}: إجابة صحيحة (${correctAnswer})</li>`;
                 } else {
-                    output += `<li>${question}: <span class="wrong">إجابة خاطئة</span> (إجابتك: ${userAnswer || 'لم تجب'}, الإجابة الصحيحة: ${correctAnswer})</li>`;
+                    incorrectAnswers.push({question: key, answer: value, correctAnswer: correctAnswers[key]});
                 }
             }
 
-            output += `</ul><h3>مجموع النقاط: ${score} من ${totalQuestions}</h3>`;
-            results.innerHTML = output;
-        }
-        let remainingTime = 2 * 60 * 60; // ساعتين بالأثواني
+            const resultDiv = document.getElementById('result');
+            let resultHtml = `لقد أجبت على ${score} من أصل ${totalQuestions} سؤالاً بشكل صحيح.`;
 
-        function updateTimer() {
-            const timerDiv = document.getElementById('timer');
-            const hours = Math.floor(remainingTime / 3600);
-            const minutes = Math.floor((remainingTime % 3600) / 60);
-            const seconds = remainingTime % 60;
-
-            timerDiv.innerHTML = `الوقت المتبقي: ${hours}:${minutes}:${seconds}`;
-            if (remainingTime > 0) {
-                remainingTime--;
-                setTimeout(updateTimer, 1000);
-            } else {
-                checkAnswers();
-                alert('انتهى الوقت! تم إرسال الإجابات.');
+            if (incorrectAnswers.length > 0) {
+                resultHtml += "<h3>الإجابات الخاطئة وتصحيحها:</h3><ul>";
+                incorrectAnswers.forEach(item => {
+                    resultHtml += `<li>السؤال ${item.question.slice(1)}:
+                    <br>إجابتك: ${item.answer}
+                    <br>الإجابة الصحيحة: ${item.correctAnswer}
+                    <br>${getExplanation(item.question)}</li>`;
+                });
+                resultHtml += "</ul>";
             }
+
+            resultDiv.innerHTML = resultHtml;
         }
 
-        updateTimer();
+        function getExplanation(question) {
+            const explanations = {
+                q1: "المدينة المنورة هي المكان الذي هاجر إليه محمد وأصحابه.",
+                q2: "ثورة أكتوبر البلشفية وقعت في عام 1917، وهي حدث هام في التاريخ الروسي.",
+                q3: "الملكة إليزابيث الأولى كانت ملكة إنجلترا التي حكمت في العصر الإليزابيثي.",
+                q4: "الإسكندر الأكبر كان ملك مقدونيا وقاد الفتوحات التي أسست إمبراطورية واسعة.",
+                q5: "محمد علي باشا هو مؤسس مصر الحديثة.",
+                q6: "أبراهام لينكون هو الرئيس الأمريكي الذي أصدر إعلان تحرير العبيد.",
+                q7: "ثيودور روزفلت كان الرئيس الأمريكي الذي حصل على جائزة نوبل للسلام.",
+                q8: "توت عنخ آمون هو الفرعون المصري الشهير بمقبرته الذهبية.",
+                q9: "نيرون كان الإمبراطور الروماني المعروف باضطهاد المسيحيين وحريق روما.",
+                q10: "الجزائر استقلت عن فرنسا في عام 1962 بعد حرب تحرير طويلة.",
+                q11: "أبو جعفر المنصور هو الخليفة العباسي الذي بنى مدينة بغداد.",
+                q12: "جامعة الأزهر تأسست في عام 970 ميلادي.",
+                q13: "الملك جون هو الذي وقع الميثاق الأعظم (ماجنا كارتا) في عام 1215.",
+                q14: "هنيبعل كان القائد القرطاجي الذي قاد جيشه عبر جبال الألب لغزو روما.",
+                q15: "فتح مكة حدث في العام 630 ميلادي.",
+                q16: "هاري ترومان هو الرئيس الأمريكي الذي أطلق مبدأ ترومان لدعم الدول ضد الشيوعية.",
+                q17: "قصر فرساي بني في عهد الملك لويس الرابع عشر.",
+                q18: "غزو بولندا من قبل ألمانيا في 1939 هو الحدث الذي أشعل فتيل الحرب العالمية الثانية.",
+                q19: "سقراط هو الفيلسوف الذي أعدمه حكام أثينا بتهمة إفساد الشباب.",
+                q20: "ابن بطوطة هو الرحالة المغربي الذي ألف كتاب 'تحفة النظار في غرائب الأمصار وعجائب الأسفار'."
+            };
+            return explanations[question];
+        }
     </script>
 </body>
+
 </html>
