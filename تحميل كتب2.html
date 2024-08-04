@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثانية ثانوي علمي ترم ثاني</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 6vw; /* حجم الخط بالنسبة إلى عرض النافذة */
+        }
+
+        select {
+            padding: 10px;
+            font-size: 4vw; /* حجم الخط بالنسبة إلى عرض النافذة */
+            border-radius: 8px;
+            border: 1px solid #007bff;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 4vw; /* حجم الخط بالنسبة إلى عرض النافذة */
+            border-radius: 8px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+    </style>
+    <script>
+        function downloadSelectedFile() {
+            var select = document.getElementById("fileSelect");
+            var selectedValue = select.options[select.selectedIndex].value;
+            if (selectedValue) {
+                var a = document.createElement('a');
+                a.href = selectedValue;
+                a.download = selectedValue.split('/').pop();
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>تحميل ملفات الصف الثاني الثانوي</h1>
+        <select id="fileSelect">
+            <option class="h" value="" disabled selected>اختر ملفًا لتنزيله</option>
+            <option value="كتاب كيان ثانيه ثانوي عربي.pdf">كتاب كيان ثانية ثانوي عربي ترم ثاني</option>
+            <option value="موقع شبابيك ميرسي - لغة فرنسية - 2 ث - ترم 2 - ذاكرولي (2).pdf">كتاب ميرسي من موقع شبابيك</option>
+            <option value="_نقدر_التعليمي_الامتحان_أحياء_2ث_ترم2_2024.pdf">كتاب الامتحان أحياء من قناة تليجرام نقدر التعليمي</option>
+            <option value="قوانين الفيزياء تانية ثانوي ترم ثاني (موقع كن مجد).pdf">الفيزياء تانية ثانوي ترم ثاني (موقع كن مجد)</option>
+            <option value="كتاب_الامتحان_فيزياء_جزء_الأسئلة_2024_TOOPSEC_❤️⚠️_compressed.pdf">كتاب الامتحان فيزياء جزء الأسئلة 2024</option>
+            <option value="مذكرة الحسام في كيمياء تانية ثانوي الترم الثاني.pdf">مذكرة الحسام في كيمياء تانية ثانوي الترم الثاني</option>
+            <option value="عربي و رياضه ثانيه ثانوي.pdf">نماذج عربي و رياضة ثانية ثانوي</option>
+            <option value="نموذج استرشادي كيمياء ثانيه ثانوي 2024.pdf">نموذج الوزارة الاسترشادي كيمياء</option>
+            <option value="امتحان الوزاره استرشادي رياضه بحته.pdf">نماذج الوزارة الاسترشادي رياضة</option>
+            <option value="مفاهيم رياضة أدبي.jpg">مفاهيم رياضة أدبي</option>
+            <option value="اهم قوانين الرياضيات ادبي للصف الثاني الثانوي الترم الثاني مستر عادل ادوار.pdf">أهم قوانين الرياضيات أدبي للصف الثاني الثانوي الترم الثاني مستر عادل ادوار</option>
+            <option value="امتحان الوزارة الإسترشادي فى الأحياء للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك أونلاين.pdf">امتحان الوزارة الإسترشادي في الأحياء + نموذج الإجابة للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك أونلاين</option>
+            <option value="ملخص أحياء تانية ثانوي ترم ثاني (موقع كن مجد).pdf">ملخص أحياء تانية ثانوي ترم ثاني (موقع كن مجد)</option>
+            <option value="امتحان الوزارة الإسترشادي في الكيمياء للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك اونلاين.pdf">امتحان الوزارة الإسترشادي في الكيمياء للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك اونلاين</option>
+            <option value="مراجعة ليلة الامتحان فى اللغة الفرنسية للصف الثانى الثانوى الترم الثانى 2024 من موقع تعليمك اونلاين مسيو محمد عبدالحميد.pdf">مراجعة ليلة الامتحان في اللغة الفرنسية للصف الثاني الثانوي الترم الثاني 2024 من موقع تعليمك اونلاين مسيو محمد عبدالحميد</option>
+            <option value="امتحانات فرنساوي من موقع السبوره.pdf">امتحانات فرنساوي من موقع السبوره</option>
+            <option value="امتحان الوزارة الإسترشادي فى تطبيقات الرياضيات للصف الثاني الثانوي علمي الترم الثانى 2024 من موقع تعليمك اونلاين.PDF">امتحان الوزارة الإسترشادي فى تطبيقات الرياضيات + نموذج الإجابة للصف الثاني الثانوي علمي الترم الثانى 2024 من موقع تعليمك اونلاين</option>
+            <option value="مراجعة رياضيات تطبيقية تانية ثانوي الترم الثاني 2024 هنذاكر اون لاين من موقع شبابيك.pdf">مراجعة رياضيات تطبيقية تانية ثانوي الترم الثاني 2024 هنذاكر اون لاين من موقع شبابيك</option>
+            <option value="اجابات امتحان الوزاره الاسترشادي رياضه تطبيقيه من موقع مدرس دوت كوم.pdf">اجابات امتحان الوزاره الاسترشادي رياضه تطبيقيه من موقع مدرس دوت كوم</option>
+        </select>
+        <button onclick="downloadSelectedFile()">تحميل او فتح الملف</button>
+    </div>
+</body>
+</html>
