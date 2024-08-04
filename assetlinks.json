@@ -1,0 +1,11 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.menaazez.learninegypt1",
+        "sha256_cert_fingerprints":
+          ["9B:FF:62:2C:49:5D:53:BA:AC:05:7C:76:52:1B:43:2E:F7:86:34:C6:FD:29:F8:2B:FA:DE:FE:05:92:06:23:30"]
+      }
+    }
+  ]
