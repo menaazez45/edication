@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثالثه ثانوي علمي</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8966351593515274"
+     crossorigin="anonymous"></script>
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8966351593515274"
+     crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+            text-align: center;
+            flex: 1; /* Ensure the container takes up available space */
+        }
+
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 6vw;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 4vw;
+            border-radius: 8px;
+            border: 1px solid #007bff;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 40px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+    <script>
+        function downloadSelectedFile() {
+            var select = document.getElementById("fileSelect");
+            var selectedValue = select.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="اسئله علمي.html" class="button">اسئله علمي</a>
+        <a href="ثالثه ثانوي علمي.html" class="button"> علمي</a>
+
+    </div>
+    <br>
+    <div class="container">
+        <h1>اختبار الصف الثالث الثانوي علمي</h1>
+        <select id="fileSelect">
+            <option value="" disabled selected>اختر امتحان لفتحه</option>
+            <option value="احياء.html">اختبار احياء</option>
+            <option value="انجليش.html">اختبار انجليزي</option>
+        </select>
+        <button class="button" onclick="downloadSelectedFile()">فتح الامتحان</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>امتحان جغرافيا</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8966351593515274"
+     crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .question {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: right;
+        }
+        .question h3 {
+            margin: 0 0 10px 0;
+        }
+        .timer {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #e74c3c;
+        }
+        .result {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: right;
+        }
+        .result p {
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>امتحان جغرافيا للصف الثالث الثانوي</h1>
+    <div id="timer">الوقت المتبقي: 2:00:00</div>
+    <form id="examForm">
+        <div class="question">
+            <h3>1. ما هو أكبر محيط في العالم؟</h3>
+            <label><input type="radio" name="q1" value="a"> المحيط الأطلسي</label><br>
+            <label><input type="radio" name="q1" value="b"> المحيط الهادي</label><br>
+            <label><input type="radio" name="q1" value="c"> المحيط الهندي</label><br>
+            <label><input type="radio" name="q1" value="d"> المحيط المتجمد الشمالي</label>
+        </div>
+        <div class="question">
+            <h3>2. ما هي أكبر قارة من حيث المساحة؟</h3>
+            <label><input type="radio" name="q2" value="a"> أفريقيا</label><br>
+            <label><input type="radio" name="q2" value="b"> آسيا</label><br>
+            <label><input type="radio" name="q2" value="c"> أمريكا الجنوبية</label><br>
+            <label><input type="radio" name="q2" value="d"> أوروبا</label>
+        </div>
+        <div class="question">
+            <h3>3. أي من المدن التالية هي عاصمة اليابان؟</h3>
+            <label><input type="radio" name="q3" value="a"> كيوتو</label><br>
+            <label><input type="radio" name="q3" value="b"> أوساكا</label><br>
+            <label><input type="radio" name="q3" value="c"> طوكيو</label><br>
+            <label><input type="radio" name="q3" value="d"> ناغويا</label>
+        </div>
+        <div class="question">
+            <h3>4. ما هي أطول نهر في العالم؟</h3>
+            <label><input type="radio" name="q4" value="a"> النيل</label><br>
+            <label><input type="radio" name="q4" value="b"> الأمازون</label><br>
+            <label><input type="radio" name="q4" value="c"> اليانغتسي</label><br>
+            <label><input type="radio" name="q4" value="d"> الميسيسيبي</label>
+        </div>
+        <div class="question">
+            <h3>5. ما هو أكبر بحر داخلي في العالم؟</h3>
+            <label><input type="radio" name="q5" value="a"> البحر الأسود</label><br>
+            <label><input type="radio" name="q5" value="b"> بحر قزوين</label><br>
+            <label><input type="radio" name="q5" value="c"> البحر الميت</label><br>
+            <label><input type="radio" name="q5" value="d"> بحر آرال</label>
+        </div>
+        <div class="question">
+            <h3>6. أي من الدول التالية ليست جزءًا من الاتحاد الأوروبي؟</h3>
+            <label><input type="radio" name="q6" value="a"> فرنسا</label><br>
+            <label><input type="radio" name="q6" value="b"> ألمانيا</label><br>
+            <label><input type="radio" name="q6" value="c"> النرويج</label><br>
+            <label><input type="radio" name="q6" value="d"> إيطاليا</label>
+        </div>
+        <div class="question">
+            <h3>7. ما هي عاصمة كندا؟</h3>
+            <label><input type="radio" name="q7" value="a"> تورونتو</label><br>
+            <label><input type="radio" name="q7" value="b"> فانكوفر</label><br>
+            <label><input type="radio" name="q7" value="c"> أوتاوا</label><br>
+            <label><input type="radio" name="q7" value="d"> مونتريال</label>
+        </div>
+        <div class="question">
+            <h3>8. ما هي أصغر دولة في العالم من حيث المساحة؟</h3>
+            <label><input type="radio" name="q8" value="a"> موناكو</label><br>
+            <label><input type="radio" name="q8" value="b"> سان مارينو</label><br>
+            <label><input type="radio" name="q8" value="c"> الفاتيكان</label><br>
+            <label><input type="radio" name="q8" value="d"> ليختنشتاين</label>
+        </div>
+        <div class="question">
+            <h3>9. أي من الأنهار التالية يتدفق عبر باريس؟</h3>
+            <label><input type="radio" name="q9" value="a"> الراين</label><br>
+            <label><input type="radio" name="q9" value="b"> السين</label><br>
+            <label><input type="radio" name="q9" value="c"> الدانوب</label><br>
+            <label><input type="radio" name="q9" value="d"> التيمز</label>
+        </div>
+        <div class="question">
+            <h3>10. ما هو اسم الصحراء الكبرى في أفريقيا؟</h3>
+            <label><input type="radio" name="q10" value="a"> صحراء كالهاري</label><br>
+            <label><input type="radio" name="q10" value="b"> صحراء ناميب</label><br>
+            <label><input type="radio" name="q10" value="c"> الصحراء الكبرى</label><br>
+            <label><input type="radio" name="q10" value="d"> صحراء ليبيا</label>
+        </div>
+        <div class="question">
+            <h3>11. ما هي أكبر دولة في أمريكا الجنوبية من حيث المساحة؟</h3>
+            <label><input type="radio" name="q11" value="a"> الأرجنتين</label><br>
+            <label><input type="radio" name="q11" value="b"> كولومبيا</label><br>
+            <label><input type="radio" name="q11" value="c"> البرازيل</label><br>
+            <label><input type="radio" name="q11" value="d"> تشيلي</label>
+        </div>
+        <div class="question">
+            <h3>12. ما هي أعلى قمة جبلية في العالم؟</h3>
+            <label><input type="radio" name="q12" value="a"> جبل كليمنجارو</label><br>
+            <label><input type="radio" name="q12" value="b"> جبل إيفرست</label><br>
+            <label><input type="radio" name="q12" value="c"> جبل ماكينلي</label><br>
+            <label><input type="radio" name="q12" value="d"> جبل فينسون</label>
+        </div>
+        <div class="question">
+            <h3>13. أي من البحيرات التالية هي أكبر بحيرة للمياه العذبة من حيث المساحة؟</h3>
+            <label><input type="radio" name="q13" value="a"> بحيرة سوبيريور</label><br>
+            <label><input type="radio" name="q13" value="b"> بحيرة فيكتوريا</label><br>
+            <label><input type="radio" name="q13" value="c"> بحيرة هورون</label><br>
+            <label><input type="radio" name="q13" value="d"> بحيرة تنجانيقا</label>
+        </div>
+        <div class="question">
+            <h3>14. ما هي الدولة التي تضم أكبر عدد من الجزر في العالم؟</h3>
+            <label><input type="radio" name="q14" value="a"> إندونيسيا</label><br>
+            <label><input type="radio" name="q14" value="b"> الفلبين</label><br>
+            <label><input type="radio" name="q14" value="c"> اليابان</label><br>
+            <label><input type="radio" name="q14" value="d"> السويد</label>
+        </div>
+        <div class="question">
+            <h3>15. ما هي أكبر صحراء في العالم؟</h3>
+            <label><input type="radio" name="q15" value="a"> الصحراء الكبرى</label><br>
+            <label><input type="radio" name="q15" value="b"> صحراء جوبي</label><br>
+            <label><input type="radio" name="q15" value="c"> صحراء باتاغونيا</label><br>
+            <label><input type="radio" name="q15" value="d"> صحراء أتاكاما</label>
+        </div>
+        <div class="question">
+            <h3>16. ما هو أعلى شلال في العالم؟</h3>
+            <label><input type="radio" name="q16" value="a"> شلالات نياجرا</label><br>
+            <label><input type="radio" name="q16" value="b"> شلالات فيكتوريا</label><br>
+            <label><input type="radio" name="q16" value="c"> شلالات آنجل</label><br>
+            <label><input type="radio" name="q16" value="d"> شلالات إجوازو</label>
+        </div>
+        <div class="question">
+            <h3>17. ما هي عاصمة أستراليا؟</h3>
+            <label><input type="radio" name="q17" value="a"> سيدني</label><br>
+            <label><input type="radio" name="q17" value="b"> ملبورن</label><br>
+            <label><input type="radio" name="q17" value="c"> كانبرا</label><br>
+            <label><input type="radio" name="q17" value="d"> بيرث</label>
+        </div>
+        <div class="question">
+            <h3>18. أي من الدول التالية لديها أكبر عدد من السكان؟</h3>
+            <label><input type="radio" name="q18" value="a"> الولايات المتحدة</label><br>
+            <label><input type="radio" name="q18" value="b"> الهند</label><br>
+            <label><input type="radio" name="q18" value="c"> الصين</label><br>
+            <label><input type="radio" name="q18" value="d"> إندونيسيا</label>
+        </div>
+        <div class="question">
+            <h3>19. ما هي الدولة التي تحدها كل من البحر الأحمر وخليج عدن؟</h3>
+            <label><input type="radio" name="q19" value="a"> السودان</label><br>
+            <label><input type="radio" name="q19" value="b"> مصر</label><br>
+            <label><input type="radio" name="q19" value="c"> اليمن</label><br>
+            <label><input type="radio" name="q19" value="d"> السعودية</label>
+        </div>
+        <div class="question">
+            <h3>20. ما هي الدولة التي تحتوي على أكبر غابة استوائية؟</h3>
+            <label><input type="radio" name="q20" value="a"> الكونغو</label><br>
+            <label><input type="radio" name="q20" value="b"> البرازيل</label><br>
+            <label><input type="radio" name="q20" value="c"> إندونيسيا</label><br>
+            <label><input type="radio" name="q20" value="d"> ماليزيا</label>
+        </div>
+        <button type="button" onclick="submitExam()">تسليم الامتحان</button>
+    </form>
+    <div class="result" id="result"></div>
+    <script>
+        let timeLeft = 600;
+        const timerElement = document.getElementById('time');
+        const resultElement = document.getElementById('result');
+
+        const timer = setInterval(() => {
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                submitExam();
+            } else {
+                let minutes = Math.floor(timeLeft / 60);
+                let seconds = timeLeft % 60;
+                timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                timeLeft--;
+            }
+        }, 1000);
+
+        function submitExam() {
+            clearInterval(timer);
+            const form = document.getElementById('examForm');
+            const formData = new FormData(form);
+            const answers = {
+                q1: 'المحيط الهادي',
+                q2: 'آسيا',
+                q3: 'طوكيو',
+                q4: 'نهر النيل',
+                q5: 'بحر قزوين',
+                q6: 'النرويج',
+                q7: 'أوتاوا',
+                q8: 'الفاتيكان',
+                q9: 'نهر السين',
+                q10: 'الصحراء الكبرى',
+                q11: 'البرازيل',
+                q12: 'جبل إيفرست',
+                q13: 'أستراليا',
+                q14: 'إندونيسيا',
+                q15: 'الصحراء الكبرى',
+                q16: 'شلالات آنجل',
+                q17: 'كانبرا',
+                q18: 'الصين',
+                q19: 'اليمن',
+                q20: 'البرازيل'
+            };
+            const explanations = {
+                q1: 'المحيط الهادي هو الأكبر من حيث المساحة والعمق.',
+                q2: 'آسيا هي أكبر قارة في العالم من حيث المساحة.',
+                q3: 'طوكيو هي العاصمة الحالية لليابان.',
+                q4: 'نهر النيل هو الأطول في العالم، يتدفق عبر شمال شرق أفريقيا.',
+                q5: 'بحر قزوين هو أكبر بحر داخلي في العالم من حيث المساحة.',
+                q6: 'النرويج ليست عضوًا في الاتحاد الأوروبي.',
+                q7: 'أوتاوا هي عاصمة كندا.',
+                q8: 'الفاتيكان هي أصغر دولة في العالم من حيث المساحة.',
+                q9: 'نهر السين يتدفق عبر باريس.',
+                q10: 'الصحراء الكبرى هي أكبر صحراء حارة في العالم.',
+                q11: 'البرازيل هي أكبر دولة في أمريكا الجنوبية من حيث المساحة.',
+                q12: 'جبل إيفرست هو أعلى قمة جبلية في العالم.',
+                q13: 'أستراليا هي أصغر قارة من حيث المساحة.',
+                q14: 'إندونيسيا تضم أكبر عدد من الجزر في العالم.',
+                q15: 'الصحراء الكبرى هي أكبر صحراء في العالم.',
+                q16: 'شلالات آنجل في فنزويلا هي أعلى شلال في العالم.',
+                q17: 'كانبرا هي عاصمة أستراليا.',
+                q18: 'الصين لديها أكبر عدد من السكان في العالم.',
+                q19: 'اليمن تحدها البحر الأحمر وخليج عدن.',
+                q20: 'البرازيل تحتوي على أكبر غابة استوائية في العالم، الأمازون.'
+            };
+            let score = 0;
+            let output = '<h2>نتائج الامتحان</h2>';
+
+            for (let [question, correctAnswer] of Object.entries(answers)) {
+                const userAnswer = formData.get(question);
+                const answerText = userAnswer ? userAnswer : "لم يتم الإجابة";
+                if (userAnswer === correctAnswer) {
+                    score++;
+                    output += `<p>${question.slice(1)}. إجابة صحيحة</p>`;
+                } else {
+                    output += `<p>${question.slice(1)}. إجابة خاطئة. الإجابة الصحيحة هي: ${correctAnswer}. <br>الشرح: ${explanations[question]}</p>`;
+                }
+            }
+
+            output += `<p>النتيجة النهائية: ${score} / 20</p>`;
+            resultElement.innerHTML = output;
+        }
+        let remainingTime = 2 * 60 * 60; // ساعتين بالأثواني
+
+        function updateTimer() {
+            const timerDiv = document.getElementById('timer');
+            const hours = Math.floor(remainingTime / 3600);
+            const minutes = Math.floor((remainingTime % 3600) / 60);
+            const seconds = remainingTime % 60;
+
+            timerDiv.innerHTML = `الوقت المتبقي: ${hours}:${minutes}:${seconds}`;
+            if (remainingTime > 0) {
+                remainingTime--;
+                setTimeout(updateTimer, 1000);
+            } else {
+                checkAnswers();
+                alert('انتهى الوقت! تم إرسال الإجابات.');
+            }
+        }
+
+        updateTimer();
+    </script>
+</body>
+</html>
