@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثالثه اعدادي  ترم اول</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 6vw; /* حجم الخط بالنسبة إلى عرض النافذة */
+        }
+
+        select {
+            padding: 10px;
+            font-size: 4vw; /* حجم الخط بالنسبة إلى عرض النافذة */
+            border-radius: 8px;
+            border: 1px solid #007bff;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 4vw; /* حجم الخط بالنسبة إلى عرض النافذة */
+            border-radius: 8px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+    </style>
+    <script>
+        function downloadSelectedFile() {
+            var select = document.getElementById("fileSelect");
+            var selectedValue = select.options[select.selectedIndex].value;
+            if (selectedValue) {
+                var a = document.createElement('a');
+                a.href = selectedValue;
+                a.download = selectedValue.split('/').pop();
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>تحميل ملفات الصف الثالث الاعدادي</h1>
+        <select id="fileSelect">
+            <option class="h" value="" disabled selected>اختر ملفًا لتنزيله</option>
+            <option value="كتاب الوزارة دين مسيحي - 3 ع الترمين - موقع شيت جامد.pdf">كتاب الوزارة دين مسيحي الترمين من موقع شيت جامد</option>
+            <option value="كتاب الوزارة لغة عربية - 3 ع الترمين - موقع شيت جامد.pdf">كتاب الوزارة لغة عربيه ترمين من موقع شيت جامد</option>
+            <option value="قصة طموح جارية - 3 ع - موقع شيت جامد.pdf">قصة طموح جارية من الوزارة من موقع شيت جامد</option>
+            <option value="كراسة الخط العربي - 3 ع - موقع شيت جامد.pdf">كراسة خط عربي موقع شيت جامد</option>
+            <option value="كتاب الوزارة ساينس - 3 ع الترمين - موقع شيت جامد.pdf">كتاب الوزارة ساينس ترمين من موقع شيت جامد</option>
+            <option value="كتاب الوزارة لغة انجليزية - 3 ع الترمين - موقع شيت جامد.pdf">كتاب الوزارة لغة انجليزية ترمين من موقع شيت جامد</option>
+            <option value="كتاب التدريبات لغة انجليزية - 3 ع ترم 1 - موقع شيت جامد.pdf">كتاب تدريبات لغة انجليزية ترم اول من موقع شيت جامد</option>
+            <option value="دليل المعلم لغة انجليزية - 3 ع الترمين - موقع شيت جامد.pdf">دليل المعلم لغة اجليزية الترمين من موقع شيت جامد</option>
+            <option value="كتاب الوزارة لغة فرنسية - 3 ع ترم 1 - موقع شيت جامد.pdf">كتاب الوزارة فرنساوي ترم اول من موقع شيت جامد</option>
+            <option value="كتاب الوزارة رياضيات - 3 ع الترمين - موقع شيت جامد.pdf">كتاب الوزارة رياضيات الترمين من موقع شيت جامد</option>
+            <option value="كتاب الوزارة بالتدريبات ماث - 3 ع ترم 1 - موقع شيت جامد.pdf">كتاب الوزارة تدريبات رياضه ترم اول من موقع شيت جامد</option>
+            <option value="كتاب الوزارة علوم - 3 ع الترمين - موقع شيت جامد.pdf">كتاب الوزارة علوم ترمين من موقع شيت جامد</option>
+            <option value="كتاب التدريبات ساينس - 3 ع ترم 1 - موقع شيت جامد.pdf">كتاب التدريبات علوم ترم اول من موقع شيت جامد</option>
+            <option value="كتاب الوزارة دراسات - 3 ع الترمين - موقع شيت جامد.pdf">كتاب الوزارة دراسات ترمين من موقع شيت جامد</option>
+            <option value="كتاب التدريبات دراسات - 3 ع ترم 1 - موقع شيت جامد.pdf">كتاب التدريبات دراسات ترم اول من موقع شيت جامد</option>
+            <option value="كتاب الوزارة كمبيوتر لغات - 3 ع ترم 1 - موقع شيت جامد.pdf">كتاب الوزارة كمبيوتر لغات ترم اول من موقع شيت جامد</option>
+            <option value="كتاب الوزارة الحاسب الآلي - 3 ع ترم 1 - موقع شيت جامد.pdf">كتاب الوزارة كمبيوتر من موقع شيت جامد</option>
+        <button onclick="downloadSelectedFile()">تحميل او فتح الملف</button>
+    </div>
+</body>
+</html>
